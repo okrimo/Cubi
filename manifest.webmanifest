@@ -1,6 +1,6 @@
 {
-  "name": "Military Flesh (Platformer)",
-  "short_name": "Military Flesh (Platformer)",
+  "name": "Cubi Run (Platformer)",
+  "short_name": "Cubi Run (Platformer)",
   "id": "com.example.platformer",
   "description": "An example of a basic platformer (Mario-like) game. Jump around and collect as many coins as you can!",
   "orientation": "landscape",
