@@ -5,22 +5,6 @@ gdjs.PiazzaCode.GDGameOverDialogObjects1= [];
 gdjs.PiazzaCode.GDGameOverDialogObjects2= [];
 gdjs.PiazzaCode.GDGameOverDialogObjects3= [];
 gdjs.PiazzaCode.GDGameOverDialogObjects4= [];
-gdjs.PiazzaCode.GDPlatform1Objects1= [];
-gdjs.PiazzaCode.GDPlatform1Objects2= [];
-gdjs.PiazzaCode.GDPlatform1Objects3= [];
-gdjs.PiazzaCode.GDPlatform1Objects4= [];
-gdjs.PiazzaCode.GDPlatform2Objects1= [];
-gdjs.PiazzaCode.GDPlatform2Objects2= [];
-gdjs.PiazzaCode.GDPlatform2Objects3= [];
-gdjs.PiazzaCode.GDPlatform2Objects4= [];
-gdjs.PiazzaCode.GDPlatform3Objects1= [];
-gdjs.PiazzaCode.GDPlatform3Objects2= [];
-gdjs.PiazzaCode.GDPlatform3Objects3= [];
-gdjs.PiazzaCode.GDPlatform3Objects4= [];
-gdjs.PiazzaCode.GDPlatform4Objects1= [];
-gdjs.PiazzaCode.GDPlatform4Objects2= [];
-gdjs.PiazzaCode.GDPlatform4Objects3= [];
-gdjs.PiazzaCode.GDPlatform4Objects4= [];
 gdjs.PiazzaCode.GDCheckpointObjects1= [];
 gdjs.PiazzaCode.GDCheckpointObjects2= [];
 gdjs.PiazzaCode.GDCheckpointObjects3= [];
@@ -53,14 +37,6 @@ gdjs.PiazzaCode.GDDustParticleObjects1= [];
 gdjs.PiazzaCode.GDDustParticleObjects2= [];
 gdjs.PiazzaCode.GDDustParticleObjects3= [];
 gdjs.PiazzaCode.GDDustParticleObjects4= [];
-gdjs.PiazzaCode.GDCloudsObjects1= [];
-gdjs.PiazzaCode.GDCloudsObjects2= [];
-gdjs.PiazzaCode.GDCloudsObjects3= [];
-gdjs.PiazzaCode.GDCloudsObjects4= [];
-gdjs.PiazzaCode.GDMoonObjects1= [];
-gdjs.PiazzaCode.GDMoonObjects2= [];
-gdjs.PiazzaCode.GDMoonObjects3= [];
-gdjs.PiazzaCode.GDMoonObjects4= [];
 gdjs.PiazzaCode.GDEndScreenRetryTextObjects1= [];
 gdjs.PiazzaCode.GDEndScreenRetryTextObjects2= [];
 gdjs.PiazzaCode.GDEndScreenRetryTextObjects3= [];
@@ -89,6 +65,10 @@ gdjs.PiazzaCode.GDSpikesObjects1= [];
 gdjs.PiazzaCode.GDSpikesObjects2= [];
 gdjs.PiazzaCode.GDSpikesObjects3= [];
 gdjs.PiazzaCode.GDSpikesObjects4= [];
+gdjs.PiazzaCode.GDinfoObjects1= [];
+gdjs.PiazzaCode.GDinfoObjects2= [];
+gdjs.PiazzaCode.GDinfoObjects3= [];
+gdjs.PiazzaCode.GDinfoObjects4= [];
 gdjs.PiazzaCode.GDPortalObjects1= [];
 gdjs.PiazzaCode.GDPortalObjects2= [];
 gdjs.PiazzaCode.GDPortalObjects3= [];
@@ -210,7 +190,7 @@ for (var i = 0, k = 0, l = gdjs.PiazzaCode.GDJumpButtonObjects2.length;i<l;++i) 
 gdjs.PiazzaCode.GDJumpButtonObjects2.length = k;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(28773668);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(29253660);
 }
 }
 if (isConditionTrue_0) {
@@ -240,7 +220,7 @@ for (var i = 0, k = 0, l = gdjs.PiazzaCode.GDJumpButtonObjects1.length;i<l;++i) 
 gdjs.PiazzaCode.GDJumpButtonObjects1.length = k;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(28774516);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(29254508);
 }
 }
 if (isConditionTrue_0) {
@@ -307,7 +287,7 @@ for (var i = 0, k = 0, l = gdjs.PiazzaCode.GDPlayerObjects3.length;i<l;++i) {
 gdjs.PiazzaCode.GDPlayerObjects3.length = k;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(28776412);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(29256404);
 }
 }
 if (isConditionTrue_0) {
@@ -327,7 +307,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtsExt__Player__IsSteppingOnFloor.func(runtimeScene, gdjs.PiazzaCode.mapOfGDgdjs_9546PiazzaCode_9546GDPlayerObjects2Objects, "PlatformerObject", null);
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(28777060);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(29257052);
 }
 }
 if (isConditionTrue_0) {
@@ -514,12 +494,13 @@ gdjs.PiazzaCode.eventsList8 = function(runtimeScene) {
 
 {
 
+gdjs.copyArray(runtimeScene.getObjects("BottomBoundary"), gdjs.PiazzaCode.GDBottomBoundaryObjects1);
 gdjs.copyArray(runtimeScene.getObjects("Player"), gdjs.PiazzaCode.GDPlayerObjects1);
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
 for (var i = 0, k = 0, l = gdjs.PiazzaCode.GDPlayerObjects1.length;i<l;++i) {
-    if ( gdjs.PiazzaCode.GDPlayerObjects1[i].getY() > gdjs.evtTools.camera.getCameraBorderBottom(runtimeScene, "", 0) ) {
+    if ( gdjs.PiazzaCode.GDPlayerObjects1[i].getY() > (( gdjs.PiazzaCode.GDBottomBoundaryObjects1.length === 0 ) ? 0 :gdjs.PiazzaCode.GDBottomBoundaryObjects1[0].getPointY("")) ) {
         isConditionTrue_0 = true;
         gdjs.PiazzaCode.GDPlayerObjects1[k] = gdjs.PiazzaCode.GDPlayerObjects1[i];
         ++k;
@@ -629,6 +610,8 @@ gdjs.PiazzaCode.GDPlayerObjects2.length = k;
 if (isConditionTrue_0) {
 /* Reuse gdjs.PiazzaCode.GDPlayerObjects2 */
 {gdjs.evtsExt__Player__TriggerDeath.func(runtimeScene, gdjs.PiazzaCode.mapOfGDgdjs_9546PiazzaCode_9546GDPlayerObjects2Objects, null);
+}
+{runtimeScene.getGame().getVariables().getFromIndex(2).sub(1);
 }
 }
 
@@ -871,17 +854,6 @@ let isConditionTrue_0 = false;
 {
 
 
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(28799524);
-}
-if (isConditionTrue_0) {
-gdjs.copyArray(runtimeScene.getObjects("GameOverDialog"), gdjs.PiazzaCode.GDGameOverDialogObjects2);
-{for(var i = 0, len = gdjs.PiazzaCode.GDGameOverDialogObjects2.length ;i < len;++i) {
-    gdjs.PiazzaCode.GDGameOverDialogObjects2[i].SetScore(runtimeScene.getGame().getVariables().getFromIndex(1).getAsNumber(), null);
-}
-}
-}
 
 }
 
@@ -901,7 +873,7 @@ for (var i = 0, k = 0, l = gdjs.PiazzaCode.GDGameOverDialogObjects1.length;i<l;+
 }
 gdjs.PiazzaCode.GDGameOverDialogObjects1.length = k;
 if (isConditionTrue_0) {
-{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, gdjs.evtTools.runtimeScene.getSceneName(runtimeScene), false);
+{gdjs.evtTools.camera.hideLayer(runtimeScene, "EndScreen");
 }
 }
 
@@ -965,7 +937,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.PiazzaCode.mapOfGDgdjs_9546PiazzaCode_9546GDPlayerObjects2Objects, gdjs.PiazzaCode.mapOfGDgdjs_9546PiazzaCode_9546GDPortalObjects2Objects, false, runtimeScene, false);
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(28796572);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(29276756);
 }
 }
 if (isConditionTrue_0) {
@@ -1148,7 +1120,7 @@ isConditionTrue_0 = false;
 }
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(28807540);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(29287828);
 }
 }
 if (isConditionTrue_0) {
@@ -1232,6 +1204,8 @@ if (isConditionTrue_0) {
 /* Reuse gdjs.PiazzaCode.GDPlayerObjects1 */
 {gdjs.evtsExt__Player__TriggerDeath.func(runtimeScene, gdjs.PiazzaCode.mapOfGDgdjs_9546PiazzaCode_9546GDPlayerObjects1Objects, null);
 }
+{runtimeScene.getGame().getVariables().getFromIndex(2).sub(1);
+}
 }
 
 }
@@ -1266,22 +1240,6 @@ gdjs.PiazzaCode.GDGameOverDialogObjects1.length = 0;
 gdjs.PiazzaCode.GDGameOverDialogObjects2.length = 0;
 gdjs.PiazzaCode.GDGameOverDialogObjects3.length = 0;
 gdjs.PiazzaCode.GDGameOverDialogObjects4.length = 0;
-gdjs.PiazzaCode.GDPlatform1Objects1.length = 0;
-gdjs.PiazzaCode.GDPlatform1Objects2.length = 0;
-gdjs.PiazzaCode.GDPlatform1Objects3.length = 0;
-gdjs.PiazzaCode.GDPlatform1Objects4.length = 0;
-gdjs.PiazzaCode.GDPlatform2Objects1.length = 0;
-gdjs.PiazzaCode.GDPlatform2Objects2.length = 0;
-gdjs.PiazzaCode.GDPlatform2Objects3.length = 0;
-gdjs.PiazzaCode.GDPlatform2Objects4.length = 0;
-gdjs.PiazzaCode.GDPlatform3Objects1.length = 0;
-gdjs.PiazzaCode.GDPlatform3Objects2.length = 0;
-gdjs.PiazzaCode.GDPlatform3Objects3.length = 0;
-gdjs.PiazzaCode.GDPlatform3Objects4.length = 0;
-gdjs.PiazzaCode.GDPlatform4Objects1.length = 0;
-gdjs.PiazzaCode.GDPlatform4Objects2.length = 0;
-gdjs.PiazzaCode.GDPlatform4Objects3.length = 0;
-gdjs.PiazzaCode.GDPlatform4Objects4.length = 0;
 gdjs.PiazzaCode.GDCheckpointObjects1.length = 0;
 gdjs.PiazzaCode.GDCheckpointObjects2.length = 0;
 gdjs.PiazzaCode.GDCheckpointObjects3.length = 0;
@@ -1314,14 +1272,6 @@ gdjs.PiazzaCode.GDDustParticleObjects1.length = 0;
 gdjs.PiazzaCode.GDDustParticleObjects2.length = 0;
 gdjs.PiazzaCode.GDDustParticleObjects3.length = 0;
 gdjs.PiazzaCode.GDDustParticleObjects4.length = 0;
-gdjs.PiazzaCode.GDCloudsObjects1.length = 0;
-gdjs.PiazzaCode.GDCloudsObjects2.length = 0;
-gdjs.PiazzaCode.GDCloudsObjects3.length = 0;
-gdjs.PiazzaCode.GDCloudsObjects4.length = 0;
-gdjs.PiazzaCode.GDMoonObjects1.length = 0;
-gdjs.PiazzaCode.GDMoonObjects2.length = 0;
-gdjs.PiazzaCode.GDMoonObjects3.length = 0;
-gdjs.PiazzaCode.GDMoonObjects4.length = 0;
 gdjs.PiazzaCode.GDEndScreenRetryTextObjects1.length = 0;
 gdjs.PiazzaCode.GDEndScreenRetryTextObjects2.length = 0;
 gdjs.PiazzaCode.GDEndScreenRetryTextObjects3.length = 0;
@@ -1350,6 +1300,10 @@ gdjs.PiazzaCode.GDSpikesObjects1.length = 0;
 gdjs.PiazzaCode.GDSpikesObjects2.length = 0;
 gdjs.PiazzaCode.GDSpikesObjects3.length = 0;
 gdjs.PiazzaCode.GDSpikesObjects4.length = 0;
+gdjs.PiazzaCode.GDinfoObjects1.length = 0;
+gdjs.PiazzaCode.GDinfoObjects2.length = 0;
+gdjs.PiazzaCode.GDinfoObjects3.length = 0;
+gdjs.PiazzaCode.GDinfoObjects4.length = 0;
 gdjs.PiazzaCode.GDPortalObjects1.length = 0;
 gdjs.PiazzaCode.GDPortalObjects2.length = 0;
 gdjs.PiazzaCode.GDPortalObjects3.length = 0;
@@ -1400,22 +1354,6 @@ gdjs.PiazzaCode.GDGameOverDialogObjects1.length = 0;
 gdjs.PiazzaCode.GDGameOverDialogObjects2.length = 0;
 gdjs.PiazzaCode.GDGameOverDialogObjects3.length = 0;
 gdjs.PiazzaCode.GDGameOverDialogObjects4.length = 0;
-gdjs.PiazzaCode.GDPlatform1Objects1.length = 0;
-gdjs.PiazzaCode.GDPlatform1Objects2.length = 0;
-gdjs.PiazzaCode.GDPlatform1Objects3.length = 0;
-gdjs.PiazzaCode.GDPlatform1Objects4.length = 0;
-gdjs.PiazzaCode.GDPlatform2Objects1.length = 0;
-gdjs.PiazzaCode.GDPlatform2Objects2.length = 0;
-gdjs.PiazzaCode.GDPlatform2Objects3.length = 0;
-gdjs.PiazzaCode.GDPlatform2Objects4.length = 0;
-gdjs.PiazzaCode.GDPlatform3Objects1.length = 0;
-gdjs.PiazzaCode.GDPlatform3Objects2.length = 0;
-gdjs.PiazzaCode.GDPlatform3Objects3.length = 0;
-gdjs.PiazzaCode.GDPlatform3Objects4.length = 0;
-gdjs.PiazzaCode.GDPlatform4Objects1.length = 0;
-gdjs.PiazzaCode.GDPlatform4Objects2.length = 0;
-gdjs.PiazzaCode.GDPlatform4Objects3.length = 0;
-gdjs.PiazzaCode.GDPlatform4Objects4.length = 0;
 gdjs.PiazzaCode.GDCheckpointObjects1.length = 0;
 gdjs.PiazzaCode.GDCheckpointObjects2.length = 0;
 gdjs.PiazzaCode.GDCheckpointObjects3.length = 0;
@@ -1448,14 +1386,6 @@ gdjs.PiazzaCode.GDDustParticleObjects1.length = 0;
 gdjs.PiazzaCode.GDDustParticleObjects2.length = 0;
 gdjs.PiazzaCode.GDDustParticleObjects3.length = 0;
 gdjs.PiazzaCode.GDDustParticleObjects4.length = 0;
-gdjs.PiazzaCode.GDCloudsObjects1.length = 0;
-gdjs.PiazzaCode.GDCloudsObjects2.length = 0;
-gdjs.PiazzaCode.GDCloudsObjects3.length = 0;
-gdjs.PiazzaCode.GDCloudsObjects4.length = 0;
-gdjs.PiazzaCode.GDMoonObjects1.length = 0;
-gdjs.PiazzaCode.GDMoonObjects2.length = 0;
-gdjs.PiazzaCode.GDMoonObjects3.length = 0;
-gdjs.PiazzaCode.GDMoonObjects4.length = 0;
 gdjs.PiazzaCode.GDEndScreenRetryTextObjects1.length = 0;
 gdjs.PiazzaCode.GDEndScreenRetryTextObjects2.length = 0;
 gdjs.PiazzaCode.GDEndScreenRetryTextObjects3.length = 0;
@@ -1484,6 +1414,10 @@ gdjs.PiazzaCode.GDSpikesObjects1.length = 0;
 gdjs.PiazzaCode.GDSpikesObjects2.length = 0;
 gdjs.PiazzaCode.GDSpikesObjects3.length = 0;
 gdjs.PiazzaCode.GDSpikesObjects4.length = 0;
+gdjs.PiazzaCode.GDinfoObjects1.length = 0;
+gdjs.PiazzaCode.GDinfoObjects2.length = 0;
+gdjs.PiazzaCode.GDinfoObjects3.length = 0;
+gdjs.PiazzaCode.GDinfoObjects4.length = 0;
 gdjs.PiazzaCode.GDPortalObjects1.length = 0;
 gdjs.PiazzaCode.GDPortalObjects2.length = 0;
 gdjs.PiazzaCode.GDPortalObjects3.length = 0;

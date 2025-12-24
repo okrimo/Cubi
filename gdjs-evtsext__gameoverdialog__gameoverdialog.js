@@ -69,7 +69,7 @@ let isConditionTrue_0 = false;
 {
 gdjs.copyArray(eventsFunctionContext.getObjects("EndScreenSubHeader"), gdjs.evtsExt__GameOverDialog__GameOverDialog.GameOverDialog.prototype.SetScoreContext.GDEndScreenSubHeaderObjects1);
 {for(var i = 0, len = gdjs.evtsExt__GameOverDialog__GameOverDialog.GameOverDialog.prototype.SetScoreContext.GDEndScreenSubHeaderObjects1.length ;i < len;++i) {
-    gdjs.evtsExt__GameOverDialog__GameOverDialog.GameOverDialog.prototype.SetScoreContext.GDEndScreenSubHeaderObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Text")).setText("You got " + ("" + eventsFunctionContext.getArgument("Score")) + " points!");
+    gdjs.evtsExt__GameOverDialog__GameOverDialog.GameOverDialog.prototype.SetScoreContext.GDEndScreenSubHeaderObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Text")).setText("Hai 3 vite, sei in grado di arrivare fino alla fine?\nTrova il modo di raggiungere il portale per cambiare livello!");
 }
 }
 }
@@ -80,42 +80,6 @@ gdjs.copyArray(eventsFunctionContext.getObjects("EndScreenSubHeader"), gdjs.evts
 {
 
 
-
-}
-
-
-{
-
-
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-{isConditionTrue_0 = ((Number(eventsFunctionContext.getArgument("Score")) || 0) < eventsFunctionContext.getObjects("Object")[0]._getMaxScore());
-}
-if (isConditionTrue_0) {
-gdjs.copyArray(eventsFunctionContext.getObjects("EndScreenChallengeText"), gdjs.evtsExt__GameOverDialog__GameOverDialog.GameOverDialog.prototype.SetScoreContext.GDEndScreenChallengeTextObjects1);
-{for(var i = 0, len = gdjs.evtsExt__GameOverDialog__GameOverDialog.GameOverDialog.prototype.SetScoreContext.GDEndScreenChallengeTextObjects1.length ;i < len;++i) {
-    gdjs.evtsExt__GameOverDialog__GameOverDialog.GameOverDialog.prototype.SetScoreContext.GDEndScreenChallengeTextObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Text")).setText("Can you get " + ("" + eventsFunctionContext.getObjects("Object")[0]._getMaxScore()) + " points?");
-}
-}
-}
-
-}
-
-
-{
-
-
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-{isConditionTrue_0 = ((Number(eventsFunctionContext.getArgument("Score")) || 0) >= eventsFunctionContext.getObjects("Object")[0]._getMaxScore());
-}
-if (isConditionTrue_0) {
-gdjs.copyArray(eventsFunctionContext.getObjects("EndScreenChallengeText"), gdjs.evtsExt__GameOverDialog__GameOverDialog.GameOverDialog.prototype.SetScoreContext.GDEndScreenChallengeTextObjects1);
-{for(var i = 0, len = gdjs.evtsExt__GameOverDialog__GameOverDialog.GameOverDialog.prototype.SetScoreContext.GDEndScreenChallengeTextObjects1.length ;i < len;++i) {
-    gdjs.evtsExt__GameOverDialog__GameOverDialog.GameOverDialog.prototype.SetScoreContext.GDEndScreenChallengeTextObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Text")).setText("You got the highest number of points!");
-}
-}
-}
 
 }
 
@@ -268,7 +232,8 @@ for (var i = 0, k = 0, l = gdjs.evtsExt__GameOverDialog__GameOverDialog.GameOver
 }
 gdjs.evtsExt__GameOverDialog__GameOverDialog.GameOverDialog.prototype.IsRetryClickedContext.GDRetryButtonObjects1.length = k;
 if (isConditionTrue_0) {
-{eventsFunctionContext.returnValue = true;}
+{gdjs.evtTools.camera.hideLayer(runtimeScene, "EndScreen");
+}
 }
 
 }

@@ -5,18 +5,6 @@ gdjs.InternoCode.GDGameOverDialogObjects1= [];
 gdjs.InternoCode.GDGameOverDialogObjects2= [];
 gdjs.InternoCode.GDGameOverDialogObjects3= [];
 gdjs.InternoCode.GDGameOverDialogObjects4= [];
-gdjs.InternoCode.GDPlatform1Objects1= [];
-gdjs.InternoCode.GDPlatform1Objects2= [];
-gdjs.InternoCode.GDPlatform1Objects3= [];
-gdjs.InternoCode.GDPlatform1Objects4= [];
-gdjs.InternoCode.GDPlatform2Objects1= [];
-gdjs.InternoCode.GDPlatform2Objects2= [];
-gdjs.InternoCode.GDPlatform2Objects3= [];
-gdjs.InternoCode.GDPlatform2Objects4= [];
-gdjs.InternoCode.GDPlatform3Objects1= [];
-gdjs.InternoCode.GDPlatform3Objects2= [];
-gdjs.InternoCode.GDPlatform3Objects3= [];
-gdjs.InternoCode.GDPlatform3Objects4= [];
 gdjs.InternoCode.GDPlatform4Objects1= [];
 gdjs.InternoCode.GDPlatform4Objects2= [];
 gdjs.InternoCode.GDPlatform4Objects3= [];
@@ -53,14 +41,6 @@ gdjs.InternoCode.GDDustParticleObjects1= [];
 gdjs.InternoCode.GDDustParticleObjects2= [];
 gdjs.InternoCode.GDDustParticleObjects3= [];
 gdjs.InternoCode.GDDustParticleObjects4= [];
-gdjs.InternoCode.GDCloudsObjects1= [];
-gdjs.InternoCode.GDCloudsObjects2= [];
-gdjs.InternoCode.GDCloudsObjects3= [];
-gdjs.InternoCode.GDCloudsObjects4= [];
-gdjs.InternoCode.GDMoonObjects1= [];
-gdjs.InternoCode.GDMoonObjects2= [];
-gdjs.InternoCode.GDMoonObjects3= [];
-gdjs.InternoCode.GDMoonObjects4= [];
 gdjs.InternoCode.GDEndScreenRetryTextObjects1= [];
 gdjs.InternoCode.GDEndScreenRetryTextObjects2= [];
 gdjs.InternoCode.GDEndScreenRetryTextObjects3= [];
@@ -141,6 +121,26 @@ gdjs.InternoCode.GDascensoreObjects1= [];
 gdjs.InternoCode.GDascensoreObjects2= [];
 gdjs.InternoCode.GDascensoreObjects3= [];
 gdjs.InternoCode.GDascensoreObjects4= [];
+gdjs.InternoCode.GDNewGameOverDialogObjects1= [];
+gdjs.InternoCode.GDNewGameOverDialogObjects2= [];
+gdjs.InternoCode.GDNewGameOverDialogObjects3= [];
+gdjs.InternoCode.GDNewGameOverDialogObjects4= [];
+gdjs.InternoCode.GDnonscendereObjects1= [];
+gdjs.InternoCode.GDnonscendereObjects2= [];
+gdjs.InternoCode.GDnonscendereObjects3= [];
+gdjs.InternoCode.GDnonscendereObjects4= [];
+gdjs.InternoCode.GDvignettaObjects1= [];
+gdjs.InternoCode.GDvignettaObjects2= [];
+gdjs.InternoCode.GDvignettaObjects3= [];
+gdjs.InternoCode.GDvignettaObjects4= [];
+gdjs.InternoCode.GDshaker2Objects1= [];
+gdjs.InternoCode.GDshaker2Objects2= [];
+gdjs.InternoCode.GDshaker2Objects3= [];
+gdjs.InternoCode.GDshaker2Objects4= [];
+gdjs.InternoCode.GDiddhiObjects1= [];
+gdjs.InternoCode.GDiddhiObjects2= [];
+gdjs.InternoCode.GDiddhiObjects3= [];
+gdjs.InternoCode.GDiddhiObjects4= [];
 gdjs.InternoCode.GDPortalObjects1= [];
 gdjs.InternoCode.GDPortalObjects2= [];
 gdjs.InternoCode.GDPortalObjects3= [];
@@ -262,7 +262,7 @@ for (var i = 0, k = 0, l = gdjs.InternoCode.GDJumpButtonObjects2.length;i<l;++i)
 gdjs.InternoCode.GDJumpButtonObjects2.length = k;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(28239308);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(28729636);
 }
 }
 if (isConditionTrue_0) {
@@ -292,7 +292,7 @@ for (var i = 0, k = 0, l = gdjs.InternoCode.GDJumpButtonObjects1.length;i<l;++i)
 gdjs.InternoCode.GDJumpButtonObjects1.length = k;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(28240156);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(28730364);
 }
 }
 if (isConditionTrue_0) {
@@ -359,7 +359,7 @@ for (var i = 0, k = 0, l = gdjs.InternoCode.GDPlayerObjects3.length;i<l;++i) {
 gdjs.InternoCode.GDPlayerObjects3.length = k;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(28241988);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(28732260);
 }
 }
 if (isConditionTrue_0) {
@@ -379,7 +379,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtsExt__Player__IsSteppingOnFloor.func(runtimeScene, gdjs.InternoCode.mapOfGDgdjs_9546InternoCode_9546GDPlayerObjects2Objects, "PlatformerObject", null);
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(28242636);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(28732908);
 }
 }
 if (isConditionTrue_0) {
@@ -746,6 +746,7 @@ if (isConditionTrue_0) {
 
 };gdjs.InternoCode.mapOfGDgdjs_9546InternoCode_9546GDPlayerObjects1Objects = Hashtable.newFrom({"Player": gdjs.InternoCode.GDPlayerObjects1});
 gdjs.InternoCode.mapOfGDgdjs_9546InternoCode_9546GDMonsterObjects1Objects = Hashtable.newFrom({"Monster": gdjs.InternoCode.GDMonsterObjects1});
+gdjs.InternoCode.mapOfGDgdjs_9546InternoCode_9546GDPlayerObjects1Objects = Hashtable.newFrom({"Player": gdjs.InternoCode.GDPlayerObjects1});
 gdjs.InternoCode.mapOfGDgdjs_9546InternoCode_9546GDPlayerObjects2Objects = Hashtable.newFrom({"Player": gdjs.InternoCode.GDPlayerObjects2});
 gdjs.InternoCode.mapOfGDgdjs_9546InternoCode_9546GDMonsterParticlesObjects2Objects = Hashtable.newFrom({"MonsterParticles": gdjs.InternoCode.GDMonsterParticlesObjects2});
 gdjs.InternoCode.mapOfGDgdjs_9546InternoCode_9546GDPlayerObjects2Objects = Hashtable.newFrom({"Player": gdjs.InternoCode.GDPlayerObjects2});
@@ -881,6 +882,11 @@ let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.InternoCode.mapOfGDgdjs_9546InternoCode_9546GDPlayerObjects1Objects, gdjs.InternoCode.mapOfGDgdjs_9546InternoCode_9546GDMonsterObjects1Objects, false, runtimeScene, false);
 if (isConditionTrue_0) {
+/* Reuse gdjs.InternoCode.GDPlayerObjects1 */
+{gdjs.evtsExt__Player__TriggerDeath.func(runtimeScene, gdjs.InternoCode.mapOfGDgdjs_9546InternoCode_9546GDPlayerObjects1Objects, null);
+}
+{runtimeScene.getGame().getVariables().getFromIndex(2).sub(1);
+}
 
 { //Subevents
 gdjs.InternoCode.eventsList13(runtimeScene);} //End of subevents
@@ -927,7 +933,7 @@ let isConditionTrue_0 = false;
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(28265132);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(28755828);
 }
 if (isConditionTrue_0) {
 gdjs.copyArray(runtimeScene.getObjects("GameOverDialog"), gdjs.InternoCode.GDGameOverDialogObjects2);
@@ -1019,7 +1025,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.InternoCode.mapOfGDgdjs_9546InternoCode_9546GDPlayerObjects2Objects, gdjs.InternoCode.mapOfGDgdjs_9546InternoCode_9546GDPortalObjects2Objects, false, runtimeScene, false);
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(28262204);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(28752900);
 }
 }
 if (isConditionTrue_0) {
@@ -1270,7 +1276,7 @@ isConditionTrue_0 = false;
 }
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(28271356);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(28762052);
 }
 }
 if (isConditionTrue_0) {
@@ -1338,11 +1344,6 @@ let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.InternoCode.mapOfGDgdjs_9546InternoCode_9546GDPlayerObjects1Objects, gdjs.InternoCode.mapOfGDgdjs_9546InternoCode_9546GDSmileObjects1Objects, false, runtimeScene, false);
 if (isConditionTrue_0) {
-/* Reuse gdjs.InternoCode.GDSmileObjects1 */
-{for(var i = 0, len = gdjs.InternoCode.GDSmileObjects1.length ;i < len;++i) {
-    gdjs.InternoCode.GDSmileObjects1[i].hide();
-}
-}
 
 { //Subevents
 gdjs.InternoCode.eventsList23(runtimeScene);} //End of subevents
@@ -1362,7 +1363,7 @@ isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.InternoCode.
 if (isConditionTrue_0) {
 /* Reuse gdjs.InternoCode.GDPlayerObjects1 */
 {for(var i = 0, len = gdjs.InternoCode.GDPlayerObjects1.length ;i < len;++i) {
-    gdjs.InternoCode.GDPlayerObjects1[i].setPosition(-(300),1700);
+    gdjs.InternoCode.GDPlayerObjects1[i].setPosition(-(400),1700);
 }
 }
 {gdjs.evtTools.sound.playSound(runtimeScene, "Teleport 2.aac", false, 30, 1);
@@ -1430,13 +1431,13 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.InternoCode.mapOfGDgdjs_9546InternoCode_9546GDPlayerObjects1Objects, gdjs.InternoCode.mapOfGDgdjs_9546InternoCode_9546GDshakerObjects1Objects, false, runtimeScene, false);
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(28279188);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(28769836);
 }
 }
 if (isConditionTrue_0) {
 /* Reuse gdjs.InternoCode.GDshakerObjects1 */
 {for(var i = 0, len = gdjs.InternoCode.GDshakerObjects1.length ;i < len;++i) {
-    gdjs.InternoCode.GDshakerObjects1[i].hide();
+    gdjs.InternoCode.GDshakerObjects1[i].deleteFromScene(runtimeScene);
 }
 }
 {runtimeScene.getGame().getVariables().getFromIndex(2).add(1);
@@ -1469,18 +1470,6 @@ gdjs.InternoCode.GDGameOverDialogObjects1.length = 0;
 gdjs.InternoCode.GDGameOverDialogObjects2.length = 0;
 gdjs.InternoCode.GDGameOverDialogObjects3.length = 0;
 gdjs.InternoCode.GDGameOverDialogObjects4.length = 0;
-gdjs.InternoCode.GDPlatform1Objects1.length = 0;
-gdjs.InternoCode.GDPlatform1Objects2.length = 0;
-gdjs.InternoCode.GDPlatform1Objects3.length = 0;
-gdjs.InternoCode.GDPlatform1Objects4.length = 0;
-gdjs.InternoCode.GDPlatform2Objects1.length = 0;
-gdjs.InternoCode.GDPlatform2Objects2.length = 0;
-gdjs.InternoCode.GDPlatform2Objects3.length = 0;
-gdjs.InternoCode.GDPlatform2Objects4.length = 0;
-gdjs.InternoCode.GDPlatform3Objects1.length = 0;
-gdjs.InternoCode.GDPlatform3Objects2.length = 0;
-gdjs.InternoCode.GDPlatform3Objects3.length = 0;
-gdjs.InternoCode.GDPlatform3Objects4.length = 0;
 gdjs.InternoCode.GDPlatform4Objects1.length = 0;
 gdjs.InternoCode.GDPlatform4Objects2.length = 0;
 gdjs.InternoCode.GDPlatform4Objects3.length = 0;
@@ -1517,14 +1506,6 @@ gdjs.InternoCode.GDDustParticleObjects1.length = 0;
 gdjs.InternoCode.GDDustParticleObjects2.length = 0;
 gdjs.InternoCode.GDDustParticleObjects3.length = 0;
 gdjs.InternoCode.GDDustParticleObjects4.length = 0;
-gdjs.InternoCode.GDCloudsObjects1.length = 0;
-gdjs.InternoCode.GDCloudsObjects2.length = 0;
-gdjs.InternoCode.GDCloudsObjects3.length = 0;
-gdjs.InternoCode.GDCloudsObjects4.length = 0;
-gdjs.InternoCode.GDMoonObjects1.length = 0;
-gdjs.InternoCode.GDMoonObjects2.length = 0;
-gdjs.InternoCode.GDMoonObjects3.length = 0;
-gdjs.InternoCode.GDMoonObjects4.length = 0;
 gdjs.InternoCode.GDEndScreenRetryTextObjects1.length = 0;
 gdjs.InternoCode.GDEndScreenRetryTextObjects2.length = 0;
 gdjs.InternoCode.GDEndScreenRetryTextObjects3.length = 0;
@@ -1605,6 +1586,26 @@ gdjs.InternoCode.GDascensoreObjects1.length = 0;
 gdjs.InternoCode.GDascensoreObjects2.length = 0;
 gdjs.InternoCode.GDascensoreObjects3.length = 0;
 gdjs.InternoCode.GDascensoreObjects4.length = 0;
+gdjs.InternoCode.GDNewGameOverDialogObjects1.length = 0;
+gdjs.InternoCode.GDNewGameOverDialogObjects2.length = 0;
+gdjs.InternoCode.GDNewGameOverDialogObjects3.length = 0;
+gdjs.InternoCode.GDNewGameOverDialogObjects4.length = 0;
+gdjs.InternoCode.GDnonscendereObjects1.length = 0;
+gdjs.InternoCode.GDnonscendereObjects2.length = 0;
+gdjs.InternoCode.GDnonscendereObjects3.length = 0;
+gdjs.InternoCode.GDnonscendereObjects4.length = 0;
+gdjs.InternoCode.GDvignettaObjects1.length = 0;
+gdjs.InternoCode.GDvignettaObjects2.length = 0;
+gdjs.InternoCode.GDvignettaObjects3.length = 0;
+gdjs.InternoCode.GDvignettaObjects4.length = 0;
+gdjs.InternoCode.GDshaker2Objects1.length = 0;
+gdjs.InternoCode.GDshaker2Objects2.length = 0;
+gdjs.InternoCode.GDshaker2Objects3.length = 0;
+gdjs.InternoCode.GDshaker2Objects4.length = 0;
+gdjs.InternoCode.GDiddhiObjects1.length = 0;
+gdjs.InternoCode.GDiddhiObjects2.length = 0;
+gdjs.InternoCode.GDiddhiObjects3.length = 0;
+gdjs.InternoCode.GDiddhiObjects4.length = 0;
 gdjs.InternoCode.GDPortalObjects1.length = 0;
 gdjs.InternoCode.GDPortalObjects2.length = 0;
 gdjs.InternoCode.GDPortalObjects3.length = 0;
@@ -1655,18 +1656,6 @@ gdjs.InternoCode.GDGameOverDialogObjects1.length = 0;
 gdjs.InternoCode.GDGameOverDialogObjects2.length = 0;
 gdjs.InternoCode.GDGameOverDialogObjects3.length = 0;
 gdjs.InternoCode.GDGameOverDialogObjects4.length = 0;
-gdjs.InternoCode.GDPlatform1Objects1.length = 0;
-gdjs.InternoCode.GDPlatform1Objects2.length = 0;
-gdjs.InternoCode.GDPlatform1Objects3.length = 0;
-gdjs.InternoCode.GDPlatform1Objects4.length = 0;
-gdjs.InternoCode.GDPlatform2Objects1.length = 0;
-gdjs.InternoCode.GDPlatform2Objects2.length = 0;
-gdjs.InternoCode.GDPlatform2Objects3.length = 0;
-gdjs.InternoCode.GDPlatform2Objects4.length = 0;
-gdjs.InternoCode.GDPlatform3Objects1.length = 0;
-gdjs.InternoCode.GDPlatform3Objects2.length = 0;
-gdjs.InternoCode.GDPlatform3Objects3.length = 0;
-gdjs.InternoCode.GDPlatform3Objects4.length = 0;
 gdjs.InternoCode.GDPlatform4Objects1.length = 0;
 gdjs.InternoCode.GDPlatform4Objects2.length = 0;
 gdjs.InternoCode.GDPlatform4Objects3.length = 0;
@@ -1703,14 +1692,6 @@ gdjs.InternoCode.GDDustParticleObjects1.length = 0;
 gdjs.InternoCode.GDDustParticleObjects2.length = 0;
 gdjs.InternoCode.GDDustParticleObjects3.length = 0;
 gdjs.InternoCode.GDDustParticleObjects4.length = 0;
-gdjs.InternoCode.GDCloudsObjects1.length = 0;
-gdjs.InternoCode.GDCloudsObjects2.length = 0;
-gdjs.InternoCode.GDCloudsObjects3.length = 0;
-gdjs.InternoCode.GDCloudsObjects4.length = 0;
-gdjs.InternoCode.GDMoonObjects1.length = 0;
-gdjs.InternoCode.GDMoonObjects2.length = 0;
-gdjs.InternoCode.GDMoonObjects3.length = 0;
-gdjs.InternoCode.GDMoonObjects4.length = 0;
 gdjs.InternoCode.GDEndScreenRetryTextObjects1.length = 0;
 gdjs.InternoCode.GDEndScreenRetryTextObjects2.length = 0;
 gdjs.InternoCode.GDEndScreenRetryTextObjects3.length = 0;
@@ -1791,6 +1772,26 @@ gdjs.InternoCode.GDascensoreObjects1.length = 0;
 gdjs.InternoCode.GDascensoreObjects2.length = 0;
 gdjs.InternoCode.GDascensoreObjects3.length = 0;
 gdjs.InternoCode.GDascensoreObjects4.length = 0;
+gdjs.InternoCode.GDNewGameOverDialogObjects1.length = 0;
+gdjs.InternoCode.GDNewGameOverDialogObjects2.length = 0;
+gdjs.InternoCode.GDNewGameOverDialogObjects3.length = 0;
+gdjs.InternoCode.GDNewGameOverDialogObjects4.length = 0;
+gdjs.InternoCode.GDnonscendereObjects1.length = 0;
+gdjs.InternoCode.GDnonscendereObjects2.length = 0;
+gdjs.InternoCode.GDnonscendereObjects3.length = 0;
+gdjs.InternoCode.GDnonscendereObjects4.length = 0;
+gdjs.InternoCode.GDvignettaObjects1.length = 0;
+gdjs.InternoCode.GDvignettaObjects2.length = 0;
+gdjs.InternoCode.GDvignettaObjects3.length = 0;
+gdjs.InternoCode.GDvignettaObjects4.length = 0;
+gdjs.InternoCode.GDshaker2Objects1.length = 0;
+gdjs.InternoCode.GDshaker2Objects2.length = 0;
+gdjs.InternoCode.GDshaker2Objects3.length = 0;
+gdjs.InternoCode.GDshaker2Objects4.length = 0;
+gdjs.InternoCode.GDiddhiObjects1.length = 0;
+gdjs.InternoCode.GDiddhiObjects2.length = 0;
+gdjs.InternoCode.GDiddhiObjects3.length = 0;
+gdjs.InternoCode.GDiddhiObjects4.length = 0;
 gdjs.InternoCode.GDPortalObjects1.length = 0;
 gdjs.InternoCode.GDPortalObjects2.length = 0;
 gdjs.InternoCode.GDPortalObjects3.length = 0;

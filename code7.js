@@ -446,7 +446,7 @@ let isConditionTrue_0 = false;
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(28625852);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(29105884);
 }
 if (isConditionTrue_0) {
 gdjs.copyArray(runtimeScene.getObjects("GameOverDialog"), gdjs.ClassificaCode.GDGameOverDialogObjects2);
@@ -538,7 +538,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.ClassificaCode.mapOfGDgdjs_9546ClassificaCode_9546GDPlayerObjects2Objects, gdjs.ClassificaCode.mapOfGDgdjs_9546ClassificaCode_9546GDPortalObjects2Objects, false, runtimeScene, false);
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(28622924);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(29102956);
 }
 }
 if (isConditionTrue_0) {
@@ -635,9 +635,7 @@ let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.runtimeScene.sceneJustBegins(runtimeScene);
 if (isConditionTrue_0) {
-{gdjs.evtTools.sound.playSound(runtimeScene, "New Hero In Town.aac", true, 30, 1);
-}
-{gdjs.evtTools.sound.playSoundOnChannel(runtimeScene, "", 0, true, 100, 1);
+{gdjs.evtTools.sound.playSoundOnChannel(runtimeScene, "New Hero In Town.aac", 4, false, 30, 1);
 }
 }
 
@@ -706,7 +704,7 @@ let isConditionTrue_0 = false;
 }
 
 
-};gdjs.ClassificaCode.asyncCallback28631804 = function (runtimeScene, asyncObjectsList) {
+};gdjs.ClassificaCode.asyncCallback29111076 = function (runtimeScene, asyncObjectsList) {
 asyncObjectsList.restoreLocalVariablesContainers(gdjs.ClassificaCode.localVariables);
 gdjs.copyArray(runtimeScene.getObjects("loading"), gdjs.ClassificaCode.GDloadingObjects2);
 {gdjs.evtTools.network.jsonToVariableStructure(runtimeScene.getScene().getVariables().getFromIndex(2).getAsString(), runtimeScene.getScene().getVariables().getFromIndex(0));
@@ -720,7 +718,7 @@ gdjs.copyArray(runtimeScene.getObjects("loading"), gdjs.ClassificaCode.GDloading
 gdjs.ClassificaCode.eventsList18(runtimeScene, asyncObjectsList);} //End of subevents
 gdjs.ClassificaCode.localVariables.length = 0;
 }
-gdjs.ClassificaCode.idToCallbackMap.set(28631804, gdjs.ClassificaCode.asyncCallback28631804);
+gdjs.ClassificaCode.idToCallbackMap.set(29111076, gdjs.ClassificaCode.asyncCallback29111076);
 gdjs.ClassificaCode.eventsList19 = function(runtimeScene) {
 
 {
@@ -730,7 +728,7 @@ gdjs.ClassificaCode.eventsList19 = function(runtimeScene) {
 {
 const asyncObjectsList = new gdjs.LongLivedObjectsList();
 asyncObjectsList.backupLocalVariablesContainers(gdjs.ClassificaCode.localVariables);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.network.sendAwaitableAsyncRequest("https://script.google.com/macros/s/AKfycbwALhSeLZsdPCBDkgq3j-AgQaQxlaUWA31Tn7AvcbkJ04V8DI_UV_W_p5bnb5aqS3x3/exec", "", "GET", "", runtimeScene.getScene().getVariables().getFromIndex(2), runtimeScene.getScene().getVariables().getFromIndex(3)), (runtimeScene) => (gdjs.ClassificaCode.asyncCallback28631804(runtimeScene, asyncObjectsList)), 28631804, asyncObjectsList);
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.network.sendAwaitableAsyncRequest("https://script.google.com/macros/s/AKfycbwALhSeLZsdPCBDkgq3j-AgQaQxlaUWA31Tn7AvcbkJ04V8DI_UV_W_p5bnb5aqS3x3/exec", "", "GET", "", runtimeScene.getScene().getVariables().getFromIndex(2), runtimeScene.getScene().getVariables().getFromIndex(3)), (runtimeScene) => (gdjs.ClassificaCode.asyncCallback29111076(runtimeScene, asyncObjectsList)), 29111076, asyncObjectsList);
 }
 }
 
@@ -824,6 +822,8 @@ for (var i = 0, k = 0, l = gdjs.ClassificaCode.GDRiprovaObjects1.length;i<l;++i)
 gdjs.ClassificaCode.GDRiprovaObjects1.length = k;
 if (isConditionTrue_0) {
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "Start", false);
+}
+{gdjs.evtTools.sound.stopSoundOnChannel(runtimeScene, 4);
 }
 }
 
