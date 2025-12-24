@@ -125,6 +125,10 @@ gdjs.EndGameCode.GDloadingObjects1= [];
 gdjs.EndGameCode.GDloadingObjects2= [];
 gdjs.EndGameCode.GDloadingObjects3= [];
 gdjs.EndGameCode.GDloadingObjects4= [];
+gdjs.EndGameCode.GDclassifica_9595introObjects1= [];
+gdjs.EndGameCode.GDclassifica_9595introObjects2= [];
+gdjs.EndGameCode.GDclassifica_9595introObjects3= [];
+gdjs.EndGameCode.GDclassifica_9595introObjects4= [];
 gdjs.EndGameCode.GDPortalObjects1= [];
 gdjs.EndGameCode.GDPortalObjects2= [];
 gdjs.EndGameCode.GDPortalObjects3= [];
@@ -710,7 +714,7 @@ gdjs.EndGameCode.eventsList18 = function(runtimeScene) {
 
 {
 
-gdjs.copyArray(runtimeScene.getObjects("Nomeutente"), gdjs.EndGameCode.GDNomeutenteObjects1);
+/* Reuse gdjs.EndGameCode.GDNomeutenteObjects1 */
 
 {
 {
@@ -782,6 +786,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.runtimeScene.sceneJustBegins(runtimeScene);
 if (isConditionTrue_0) {
 gdjs.copyArray(runtimeScene.getObjects("NewLight"), gdjs.EndGameCode.GDNewLightObjects1);
+gdjs.copyArray(runtimeScene.getObjects("Salva"), gdjs.EndGameCode.GDSalvaObjects1);
 gdjs.copyArray(runtimeScene.getObjects("classificaNomi"), gdjs.EndGameCode.GDclassificaNomiObjects1);
 gdjs.copyArray(runtimeScene.getObjects("loading"), gdjs.EndGameCode.GDloadingObjects1);
 {for(var i = 0, len = gdjs.EndGameCode.GDNewLightObjects1.length ;i < len;++i) {
@@ -794,6 +799,10 @@ gdjs.copyArray(runtimeScene.getObjects("loading"), gdjs.EndGameCode.GDloadingObj
 }
 {for(var i = 0, len = gdjs.EndGameCode.GDloadingObjects1.length ;i < len;++i) {
     gdjs.EndGameCode.GDloadingObjects1[i].hide();
+}
+}
+{for(var i = 0, len = gdjs.EndGameCode.GDSalvaObjects1.length ;i < len;++i) {
+    gdjs.EndGameCode.GDSalvaObjects1[i].Activate(false, null);
 }
 }
 }
@@ -858,6 +867,30 @@ isConditionTrue_0 = false;
 }
 }
 if (isConditionTrue_0) {
+gdjs.copyArray(runtimeScene.getObjects("Nomeutente"), gdjs.EndGameCode.GDNomeutenteObjects1);
+gdjs.copyArray(runtimeScene.getObjects("Riprova"), gdjs.EndGameCode.GDRiprovaObjects1);
+/* Reuse gdjs.EndGameCode.GDSalvaObjects1 */
+gdjs.copyArray(runtimeScene.getObjects("loading"), gdjs.EndGameCode.GDloadingObjects1);
+{for(var i = 0, len = gdjs.EndGameCode.GDSalvaObjects1.length ;i < len;++i) {
+    gdjs.EndGameCode.GDSalvaObjects1[i].Activate(false, null);
+}
+}
+{for(var i = 0, len = gdjs.EndGameCode.GDRiprovaObjects1.length ;i < len;++i) {
+    gdjs.EndGameCode.GDRiprovaObjects1[i].Activate(false, null);
+}
+}
+{for(var i = 0, len = gdjs.EndGameCode.GDSalvaObjects1.length ;i < len;++i) {
+    gdjs.EndGameCode.GDSalvaObjects1[i].deleteFromScene(runtimeScene);
+}
+}
+{for(var i = 0, len = gdjs.EndGameCode.GDNomeutenteObjects1.length ;i < len;++i) {
+    gdjs.EndGameCode.GDNomeutenteObjects1[i].hide();
+}
+}
+{for(var i = 0, len = gdjs.EndGameCode.GDloadingObjects1.length ;i < len;++i) {
+    gdjs.EndGameCode.GDloadingObjects1[i].hide(false);
+}
+}
 
 { //Subevents
 gdjs.EndGameCode.eventsList18(runtimeScene);} //End of subevents
@@ -890,40 +923,7 @@ if (isConditionTrue_0) {
 
 {
 
-gdjs.copyArray(runtimeScene.getObjects("Salva"), gdjs.EndGameCode.GDSalvaObjects1);
 
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-for (var i = 0, k = 0, l = gdjs.EndGameCode.GDSalvaObjects1.length;i<l;++i) {
-    if ( gdjs.EndGameCode.GDSalvaObjects1[i].IsClicked(null) ) {
-        isConditionTrue_0 = true;
-        gdjs.EndGameCode.GDSalvaObjects1[k] = gdjs.EndGameCode.GDSalvaObjects1[i];
-        ++k;
-    }
-}
-gdjs.EndGameCode.GDSalvaObjects1.length = k;
-if (isConditionTrue_0) {
-gdjs.copyArray(runtimeScene.getObjects("Nomeutente"), gdjs.EndGameCode.GDNomeutenteObjects1);
-gdjs.copyArray(runtimeScene.getObjects("Riprova"), gdjs.EndGameCode.GDRiprovaObjects1);
-/* Reuse gdjs.EndGameCode.GDSalvaObjects1 */
-gdjs.copyArray(runtimeScene.getObjects("loading"), gdjs.EndGameCode.GDloadingObjects1);
-{for(var i = 0, len = gdjs.EndGameCode.GDSalvaObjects1.length ;i < len;++i) {
-    gdjs.EndGameCode.GDSalvaObjects1[i].hide();
-}
-}
-{for(var i = 0, len = gdjs.EndGameCode.GDNomeutenteObjects1.length ;i < len;++i) {
-    gdjs.EndGameCode.GDNomeutenteObjects1[i].hide();
-}
-}
-{for(var i = 0, len = gdjs.EndGameCode.GDloadingObjects1.length ;i < len;++i) {
-    gdjs.EndGameCode.GDloadingObjects1[i].hide(false);
-}
-}
-{for(var i = 0, len = gdjs.EndGameCode.GDRiprovaObjects1.length ;i < len;++i) {
-    gdjs.EndGameCode.GDRiprovaObjects1[i].hide();
-}
-}
-}
 
 }
 
@@ -946,6 +946,10 @@ if (isConditionTrue_0) {
 gdjs.copyArray(runtimeScene.getObjects("Salva"), gdjs.EndGameCode.GDSalvaObjects1);
 {for(var i = 0, len = gdjs.EndGameCode.GDSalvaObjects1.length ;i < len;++i) {
     gdjs.EndGameCode.GDSalvaObjects1[i].hide();
+}
+}
+{for(var i = 0, len = gdjs.EndGameCode.GDSalvaObjects1.length ;i < len;++i) {
+    gdjs.EndGameCode.GDSalvaObjects1[i].Activate(false, null);
 }
 }
 }
@@ -971,6 +975,10 @@ if (isConditionTrue_0) {
 gdjs.copyArray(runtimeScene.getObjects("Salva"), gdjs.EndGameCode.GDSalvaObjects1);
 {for(var i = 0, len = gdjs.EndGameCode.GDSalvaObjects1.length ;i < len;++i) {
     gdjs.EndGameCode.GDSalvaObjects1[i].hide(false);
+}
+}
+{for(var i = 0, len = gdjs.EndGameCode.GDSalvaObjects1.length ;i < len;++i) {
+    gdjs.EndGameCode.GDSalvaObjects1[i].Activate(true, null);
 }
 }
 }
@@ -1107,6 +1115,10 @@ gdjs.EndGameCode.GDloadingObjects1.length = 0;
 gdjs.EndGameCode.GDloadingObjects2.length = 0;
 gdjs.EndGameCode.GDloadingObjects3.length = 0;
 gdjs.EndGameCode.GDloadingObjects4.length = 0;
+gdjs.EndGameCode.GDclassifica_9595introObjects1.length = 0;
+gdjs.EndGameCode.GDclassifica_9595introObjects2.length = 0;
+gdjs.EndGameCode.GDclassifica_9595introObjects3.length = 0;
+gdjs.EndGameCode.GDclassifica_9595introObjects4.length = 0;
 gdjs.EndGameCode.GDPortalObjects1.length = 0;
 gdjs.EndGameCode.GDPortalObjects2.length = 0;
 gdjs.EndGameCode.GDPortalObjects3.length = 0;
@@ -1277,6 +1289,10 @@ gdjs.EndGameCode.GDloadingObjects1.length = 0;
 gdjs.EndGameCode.GDloadingObjects2.length = 0;
 gdjs.EndGameCode.GDloadingObjects3.length = 0;
 gdjs.EndGameCode.GDloadingObjects4.length = 0;
+gdjs.EndGameCode.GDclassifica_9595introObjects1.length = 0;
+gdjs.EndGameCode.GDclassifica_9595introObjects2.length = 0;
+gdjs.EndGameCode.GDclassifica_9595introObjects3.length = 0;
+gdjs.EndGameCode.GDclassifica_9595introObjects4.length = 0;
 gdjs.EndGameCode.GDPortalObjects1.length = 0;
 gdjs.EndGameCode.GDPortalObjects2.length = 0;
 gdjs.EndGameCode.GDPortalObjects3.length = 0;

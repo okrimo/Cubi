@@ -141,6 +141,10 @@ gdjs.InternoCode.GDiddhiObjects1= [];
 gdjs.InternoCode.GDiddhiObjects2= [];
 gdjs.InternoCode.GDiddhiObjects3= [];
 gdjs.InternoCode.GDiddhiObjects4= [];
+gdjs.InternoCode.GDpareti_9595scantinatoObjects1= [];
+gdjs.InternoCode.GDpareti_9595scantinatoObjects2= [];
+gdjs.InternoCode.GDpareti_9595scantinatoObjects3= [];
+gdjs.InternoCode.GDpareti_9595scantinatoObjects4= [];
 gdjs.InternoCode.GDPortalObjects1= [];
 gdjs.InternoCode.GDPortalObjects2= [];
 gdjs.InternoCode.GDPortalObjects3= [];
@@ -1113,7 +1117,7 @@ let isConditionTrue_0 = false;
 {
 gdjs.copyArray(runtimeScene.getObjects("ScoreText"), gdjs.InternoCode.GDScoreTextObjects2);
 {for(var i = 0, len = gdjs.InternoCode.GDScoreTextObjects2.length ;i < len;++i) {
-    gdjs.InternoCode.GDScoreTextObjects2[i].getBehavior("Text").setText("Score: " + runtimeScene.getGame().getVariables().getFromIndex(1).getAsString() + "\nVite: " + runtimeScene.getGame().getVariables().getFromIndex(2).getAsString());
+    gdjs.InternoCode.GDScoreTextObjects2[i].getBehavior("Text").setText("Score: " + runtimeScene.getGame().getVariables().getFromIndex(1).getAsString() + gdjs.evtTools.string.newLine() + "Vite:" + runtimeScene.getGame().getVariables().getFromIndex(2).getAsString());
 }
 }
 }
@@ -1606,6 +1610,10 @@ gdjs.InternoCode.GDiddhiObjects1.length = 0;
 gdjs.InternoCode.GDiddhiObjects2.length = 0;
 gdjs.InternoCode.GDiddhiObjects3.length = 0;
 gdjs.InternoCode.GDiddhiObjects4.length = 0;
+gdjs.InternoCode.GDpareti_9595scantinatoObjects1.length = 0;
+gdjs.InternoCode.GDpareti_9595scantinatoObjects2.length = 0;
+gdjs.InternoCode.GDpareti_9595scantinatoObjects3.length = 0;
+gdjs.InternoCode.GDpareti_9595scantinatoObjects4.length = 0;
 gdjs.InternoCode.GDPortalObjects1.length = 0;
 gdjs.InternoCode.GDPortalObjects2.length = 0;
 gdjs.InternoCode.GDPortalObjects3.length = 0;
@@ -1792,6 +1800,10 @@ gdjs.InternoCode.GDiddhiObjects1.length = 0;
 gdjs.InternoCode.GDiddhiObjects2.length = 0;
 gdjs.InternoCode.GDiddhiObjects3.length = 0;
 gdjs.InternoCode.GDiddhiObjects4.length = 0;
+gdjs.InternoCode.GDpareti_9595scantinatoObjects1.length = 0;
+gdjs.InternoCode.GDpareti_9595scantinatoObjects2.length = 0;
+gdjs.InternoCode.GDpareti_9595scantinatoObjects3.length = 0;
+gdjs.InternoCode.GDpareti_9595scantinatoObjects4.length = 0;
 gdjs.InternoCode.GDPortalObjects1.length = 0;
 gdjs.InternoCode.GDPortalObjects2.length = 0;
 gdjs.InternoCode.GDPortalObjects3.length = 0;

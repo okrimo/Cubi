@@ -1055,7 +1055,7 @@ let isConditionTrue_0 = false;
 {
 gdjs.copyArray(runtimeScene.getObjects("ScoreText"), gdjs.CorridoioCode.GDScoreTextObjects2);
 {for(var i = 0, len = gdjs.CorridoioCode.GDScoreTextObjects2.length ;i < len;++i) {
-    gdjs.CorridoioCode.GDScoreTextObjects2[i].getBehavior("Text").setText("Score: " + runtimeScene.getGame().getVariables().getFromIndex(1).getAsString() + "\nVite: " + runtimeScene.getGame().getVariables().getFromIndex(2).getAsString());
+    gdjs.CorridoioCode.GDScoreTextObjects2[i].getBehavior("Text").setText("Score: " + runtimeScene.getGame().getVariables().getFromIndex(1).getAsString() + gdjs.evtTools.string.newLine() + "Vite:" + runtimeScene.getGame().getVariables().getFromIndex(2).getAsString());
 }
 }
 }

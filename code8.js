@@ -1034,7 +1034,7 @@ let isConditionTrue_0 = false;
 {
 gdjs.copyArray(runtimeScene.getObjects("ScoreText"), gdjs.PiazzaCode.GDScoreTextObjects2);
 {for(var i = 0, len = gdjs.PiazzaCode.GDScoreTextObjects2.length ;i < len;++i) {
-    gdjs.PiazzaCode.GDScoreTextObjects2[i].getBehavior("Text").setText("Score: " + runtimeScene.getGame().getVariables().getFromIndex(1).getAsString() + "\nVite:" + runtimeScene.getGame().getVariables().getFromIndex(2).getAsString());
+    gdjs.PiazzaCode.GDScoreTextObjects2[i].getBehavior("Text").setText("Score: " + runtimeScene.getGame().getVariables().getFromIndex(1).getAsString() + gdjs.evtTools.string.newLine() + "Vite:" + runtimeScene.getGame().getVariables().getFromIndex(2).getAsString());
 }
 }
 }
@@ -1053,7 +1053,7 @@ let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.runtimeScene.sceneJustBegins(runtimeScene);
 if (isConditionTrue_0) {
-{gdjs.evtTools.sound.playSound(runtimeScene, "Walen - Gameboy (freetouse.com).mp3", true, 30, 1);
+{gdjs.evtTools.sound.playSound(runtimeScene, "Theme 3.aac", true, 30, 1);
 }
 {gdjs.evtTools.sound.playSoundOnChannel(runtimeScene, "door.aac", 0, true, 100, 1);
 }
