@@ -1415,7 +1415,7 @@ if (isConditionTrue_0) {
 }
 {runtimeScene.getGame().getVariables().getFromIndex(1).add(150);
 }
-{gdjs.evtTools.sound.playSound(runtimeScene, "1up 3.aac", false, 30, 1);
+{gdjs.evtTools.sound.playSound(runtimeScene, "1up 3.aac", false, 100, 1);
 }
 }
 
@@ -1425,6 +1425,32 @@ if (isConditionTrue_0) {
 {
 
 
+
+}
+
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("IceBox"), gdjs.InternoCode.GDIceBoxObjects1);
+gdjs.copyArray(runtimeScene.getObjects("muro_scantinato"), gdjs.InternoCode.GDmuro_9595scantinatoObjects1);
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.InternoCode.GDIceBoxObjects1.length;i<l;++i) {
+    if ( gdjs.InternoCode.GDIceBoxObjects1[i].getY() > (( gdjs.InternoCode.GDmuro_9595scantinatoObjects1.length === 0 ) ? 0 :gdjs.InternoCode.GDmuro_9595scantinatoObjects1[0].getPointY("")) ) {
+        isConditionTrue_0 = true;
+        gdjs.InternoCode.GDIceBoxObjects1[k] = gdjs.InternoCode.GDIceBoxObjects1[i];
+        ++k;
+    }
+}
+gdjs.InternoCode.GDIceBoxObjects1.length = k;
+if (isConditionTrue_0) {
+/* Reuse gdjs.InternoCode.GDIceBoxObjects1 */
+{for(var i = 0, len = gdjs.InternoCode.GDIceBoxObjects1.length ;i < len;++i) {
+    gdjs.InternoCode.GDIceBoxObjects1[i].deleteFromScene(runtimeScene);
+}
+}
+}
 
 }
 
