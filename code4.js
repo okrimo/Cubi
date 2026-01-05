@@ -153,6 +153,10 @@ gdjs.ComandiCode.GDsmileObjects1= [];
 gdjs.ComandiCode.GDsmileObjects2= [];
 gdjs.ComandiCode.GDsmileObjects3= [];
 gdjs.ComandiCode.GDsmileObjects4= [];
+gdjs.ComandiCode.GDinfo_9595portaleObjects1= [];
+gdjs.ComandiCode.GDinfo_9595portaleObjects2= [];
+gdjs.ComandiCode.GDinfo_9595portaleObjects3= [];
+gdjs.ComandiCode.GDinfo_9595portaleObjects4= [];
 gdjs.ComandiCode.GDPortalObjects1= [];
 gdjs.ComandiCode.GDPortalObjects2= [];
 gdjs.ComandiCode.GDPortalObjects3= [];
@@ -482,7 +486,7 @@ let isConditionTrue_0 = false;
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(28468860);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(28469964);
 }
 if (isConditionTrue_0) {
 gdjs.copyArray(runtimeScene.getObjects("GameOverDialog"), gdjs.ComandiCode.GDGameOverDialogObjects2);
@@ -574,7 +578,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.ComandiCode.mapOfGDgdjs_9546ComandiCode_9546GDPlayerObjects2Objects, gdjs.ComandiCode.mapOfGDgdjs_9546ComandiCode_9546GDPortalObjects2Objects, false, runtimeScene, false);
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(28465932);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(28467036);
 }
 }
 if (isConditionTrue_0) {
@@ -1000,6 +1004,10 @@ gdjs.ComandiCode.GDsmileObjects1.length = 0;
 gdjs.ComandiCode.GDsmileObjects2.length = 0;
 gdjs.ComandiCode.GDsmileObjects3.length = 0;
 gdjs.ComandiCode.GDsmileObjects4.length = 0;
+gdjs.ComandiCode.GDinfo_9595portaleObjects1.length = 0;
+gdjs.ComandiCode.GDinfo_9595portaleObjects2.length = 0;
+gdjs.ComandiCode.GDinfo_9595portaleObjects3.length = 0;
+gdjs.ComandiCode.GDinfo_9595portaleObjects4.length = 0;
 gdjs.ComandiCode.GDPortalObjects1.length = 0;
 gdjs.ComandiCode.GDPortalObjects2.length = 0;
 gdjs.ComandiCode.GDPortalObjects3.length = 0;
@@ -1198,6 +1206,10 @@ gdjs.ComandiCode.GDsmileObjects1.length = 0;
 gdjs.ComandiCode.GDsmileObjects2.length = 0;
 gdjs.ComandiCode.GDsmileObjects3.length = 0;
 gdjs.ComandiCode.GDsmileObjects4.length = 0;
+gdjs.ComandiCode.GDinfo_9595portaleObjects1.length = 0;
+gdjs.ComandiCode.GDinfo_9595portaleObjects2.length = 0;
+gdjs.ComandiCode.GDinfo_9595portaleObjects3.length = 0;
+gdjs.ComandiCode.GDinfo_9595portaleObjects4.length = 0;
 gdjs.ComandiCode.GDPortalObjects1.length = 0;
 gdjs.ComandiCode.GDPortalObjects2.length = 0;
 gdjs.ComandiCode.GDPortalObjects3.length = 0;
