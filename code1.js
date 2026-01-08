@@ -480,6 +480,34 @@ if (isConditionTrue_0) {
 }
 
 
+{
+
+
+
+}
+
+
+{
+
+
+
+}
+
+
+{
+
+
+
+}
+
+
+{
+
+
+
+}
+
+
 };
 
 gdjs.StartCode.func = function(runtimeScene) {

@@ -190,7 +190,7 @@ for (var i = 0, k = 0, l = gdjs.PiazzaCode.GDJumpButtonObjects2.length;i<l;++i) 
 gdjs.PiazzaCode.GDJumpButtonObjects2.length = k;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(29354308);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(29441876);
 }
 }
 if (isConditionTrue_0) {
@@ -220,7 +220,7 @@ for (var i = 0, k = 0, l = gdjs.PiazzaCode.GDJumpButtonObjects1.length;i<l;++i) 
 gdjs.PiazzaCode.GDJumpButtonObjects1.length = k;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(29355116);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(29442684);
 }
 }
 if (isConditionTrue_0) {
@@ -287,7 +287,7 @@ for (var i = 0, k = 0, l = gdjs.PiazzaCode.GDPlayerObjects3.length;i<l;++i) {
 gdjs.PiazzaCode.GDPlayerObjects3.length = k;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(29356988);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(29444556);
 }
 }
 if (isConditionTrue_0) {
@@ -307,7 +307,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtsExt__Player__IsSteppingOnFloor.func(runtimeScene, gdjs.PiazzaCode.mapOfGDgdjs_9546PiazzaCode_9546GDPlayerObjects2Objects, "PlatformerObject", null);
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(29357636);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(29445204);
 }
 }
 if (isConditionTrue_0) {
@@ -925,7 +925,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.PiazzaCode.mapOfGDgdjs_9546PiazzaCode_9546GDPlayerObjects2Objects, gdjs.PiazzaCode.mapOfGDgdjs_9546PiazzaCode_9546GDPortalObjects2Objects, false, runtimeScene, false);
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(29377148);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(29464716);
 }
 }
 if (isConditionTrue_0) {
@@ -1106,7 +1106,7 @@ isConditionTrue_0 = false;
 }
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(29388356);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(29475924);
 }
 }
 if (isConditionTrue_0) {

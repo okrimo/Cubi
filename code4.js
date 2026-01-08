@@ -486,7 +486,7 @@ let isConditionTrue_0 = false;
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(28469964);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(28556356);
 }
 if (isConditionTrue_0) {
 gdjs.copyArray(runtimeScene.getObjects("GameOverDialog"), gdjs.ComandiCode.GDGameOverDialogObjects2);
@@ -578,7 +578,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.ComandiCode.mapOfGDgdjs_9546ComandiCode_9546GDPlayerObjects2Objects, gdjs.ComandiCode.mapOfGDgdjs_9546ComandiCode_9546GDPortalObjects2Objects, false, runtimeScene, false);
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(28467036);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(28553428);
 }
 }
 if (isConditionTrue_0) {

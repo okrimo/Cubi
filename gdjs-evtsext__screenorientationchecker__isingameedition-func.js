@@ -9,7 +9,7 @@ gdjs.evtsExt__ScreenOrientationChecker__IsInGameEdition = {};
 gdjs.evtsExt__ScreenOrientationChecker__IsInGameEdition.idToCallbackMap = new Map();
 
 
-gdjs.evtsExt__ScreenOrientationChecker__IsInGameEdition.userFunc0x11554a0 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__ScreenOrientationChecker__IsInGameEdition.userFunc0x13c61d0 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
 "use strict";
 const game = runtimeScene.getGame();
 eventsFunctionContext.returnValue = game.isInGameEdition && game.isInGameEdition();
@@ -19,7 +19,7 @@ gdjs.evtsExt__ScreenOrientationChecker__IsInGameEdition.eventsList0 = function(r
 {
 
 
-gdjs.evtsExt__ScreenOrientationChecker__IsInGameEdition.userFunc0x11554a0(runtimeScene, eventsFunctionContext);
+gdjs.evtsExt__ScreenOrientationChecker__IsInGameEdition.userFunc0x13c61d0(runtimeScene, eventsFunctionContext);
 
 }
 
