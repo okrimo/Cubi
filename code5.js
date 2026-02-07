@@ -230,7 +230,7 @@ for (var i = 0, k = 0, l = gdjs.CorridoioCode.GDJumpButtonObjects2.length;i<l;++
 gdjs.CorridoioCode.GDJumpButtonObjects2.length = k;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(28825548);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(28980356);
 }
 }
 if (isConditionTrue_0) {
@@ -260,7 +260,7 @@ for (var i = 0, k = 0, l = gdjs.CorridoioCode.GDJumpButtonObjects1.length;i<l;++
 gdjs.CorridoioCode.GDJumpButtonObjects1.length = k;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(28826356);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(28981164);
 }
 }
 if (isConditionTrue_0) {
@@ -327,7 +327,7 @@ for (var i = 0, k = 0, l = gdjs.CorridoioCode.GDPlayerObjects3.length;i<l;++i) {
 gdjs.CorridoioCode.GDPlayerObjects3.length = k;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(28828252);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(28983060);
 }
 }
 if (isConditionTrue_0) {
@@ -347,7 +347,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtsExt__Player__IsSteppingOnFloor.func(runtimeScene, gdjs.CorridoioCode.mapOfGDgdjs_9546CorridoioCode_9546GDPlayerObjects2Objects, "PlatformerObject", null);
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(28828900);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(28983708);
 }
 }
 if (isConditionTrue_0) {
@@ -868,7 +868,7 @@ let isConditionTrue_0 = false;
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(28851404);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(29006212);
 }
 if (isConditionTrue_0) {
 gdjs.copyArray(runtimeScene.getObjects("GameOverDialog"), gdjs.CorridoioCode.GDGameOverDialogObjects2);
@@ -960,7 +960,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.CorridoioCode.mapOfGDgdjs_9546CorridoioCode_9546GDPlayerObjects2Objects, gdjs.CorridoioCode.mapOfGDgdjs_9546CorridoioCode_9546GDPortalObjects2Objects, false, runtimeScene, false);
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(28848492);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(29003300);
 }
 }
 if (isConditionTrue_0) {
@@ -1074,7 +1074,7 @@ let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.runtimeScene.sceneJustBegins(runtimeScene);
 if (isConditionTrue_0) {
-{gdjs.evtTools.sound.playSound(runtimeScene, "01 - super mushroom eater revised and fixed.aac", true, 40, 1);
+{gdjs.evtTools.sound.playSound(runtimeScene, "01 - super mushroom eater revised and fixed.aac", true, 60, 1);
 }
 }
 
@@ -1125,7 +1125,7 @@ gdjs.CorridoioCode.eventsList21(runtimeScene);
 }
 
 
-};gdjs.CorridoioCode.asyncCallback28859100 = function (runtimeScene, asyncObjectsList) {
+};gdjs.CorridoioCode.asyncCallback29013908 = function (runtimeScene, asyncObjectsList) {
 asyncObjectsList.restoreLocalVariablesContainers(gdjs.CorridoioCode.localVariables);
 gdjs.copyArray(asyncObjectsList.getObjects("Freccia"), gdjs.CorridoioCode.GDFrecciaObjects2);
 
@@ -1135,7 +1135,7 @@ gdjs.copyArray(asyncObjectsList.getObjects("Freccia"), gdjs.CorridoioCode.GDFrec
 }
 gdjs.CorridoioCode.localVariables.length = 0;
 }
-gdjs.CorridoioCode.idToCallbackMap.set(28859100, gdjs.CorridoioCode.asyncCallback28859100);
+gdjs.CorridoioCode.idToCallbackMap.set(29013908, gdjs.CorridoioCode.asyncCallback29013908);
 gdjs.CorridoioCode.eventsList23 = function(runtimeScene) {
 
 {
@@ -1146,7 +1146,7 @@ gdjs.CorridoioCode.eventsList23 = function(runtimeScene) {
 const asyncObjectsList = new gdjs.LongLivedObjectsList();
 asyncObjectsList.backupLocalVariablesContainers(gdjs.CorridoioCode.localVariables);
 for (const obj of gdjs.CorridoioCode.GDFrecciaObjects1) asyncObjectsList.addObject("Freccia", obj);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(35), (runtimeScene) => (gdjs.CorridoioCode.asyncCallback28859100(runtimeScene, asyncObjectsList)), 28859100, asyncObjectsList);
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(35), (runtimeScene) => (gdjs.CorridoioCode.asyncCallback29013908(runtimeScene, asyncObjectsList)), 29013908, asyncObjectsList);
 }
 }
 
@@ -1213,7 +1213,7 @@ isConditionTrue_0 = false;
 }
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(28858108);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(29012916);
 }
 }
 if (isConditionTrue_0) {
