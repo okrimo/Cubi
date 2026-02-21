@@ -210,13 +210,6 @@ gdjs.ComandiCode.eventsList0 = function(runtimeScene) {
 {
 
 
-
-}
-
-
-{
-
-
 gdjs.ComandiCode.eventsList0(runtimeScene);
 }
 
@@ -229,13 +222,6 @@ gdjs.ComandiCode.mapOfGDgdjs_9546ComandiCode_9546GDCheckpointObjects2Objects = H
 gdjs.ComandiCode.mapOfGDgdjs_9546ComandiCode_9546GDCheckpointObjects3Objects = Hashtable.newFrom({"Checkpoint": gdjs.ComandiCode.GDCheckpointObjects3});
 gdjs.ComandiCode.mapOfGDgdjs_9546ComandiCode_9546GDPlayerObjects2Objects = Hashtable.newFrom({"Player": gdjs.ComandiCode.GDPlayerObjects2});
 gdjs.ComandiCode.eventsList3 = function(runtimeScene) {
-
-{
-
-
-
-}
-
 
 {
 
@@ -252,13 +238,6 @@ if (isConditionTrue_0) {
 }
 }
 }
-
-}
-
-
-{
-
-
 
 }
 
@@ -286,13 +265,6 @@ let isConditionTrue_0 = false;
 {
 
 
-
-}
-
-
-{
-
-
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.runtimeScene.sceneJustBegins(runtimeScene);
@@ -301,13 +273,6 @@ gdjs.copyArray(runtimeScene.getObjects("Player"), gdjs.ComandiCode.GDPlayerObjec
 {gdjs.evtsExt__Checkpoints__SaveCheckpoint.func(runtimeScene, gdjs.ComandiCode.mapOfGDgdjs_9546ComandiCode_9546GDPlayerObjects3Objects, (( gdjs.ComandiCode.GDPlayerObjects3.length === 0 ) ? 0 :gdjs.ComandiCode.GDPlayerObjects3[0].getPointX("")), (( gdjs.ComandiCode.GDPlayerObjects3.length === 0 ) ? 0 :gdjs.ComandiCode.GDPlayerObjects3[0].getPointY("")), "Checkpoint", null);
 }
 }
-
-}
-
-
-{
-
-
 
 }
 
@@ -379,13 +344,6 @@ gdjs.ComandiCode.eventsList6 = function(runtimeScene) {
 
 {
 
-
-
-}
-
-
-{
-
 gdjs.copyArray(runtimeScene.getObjects("Player"), gdjs.ComandiCode.GDPlayerObjects1);
 
 let isConditionTrue_0 = false;
@@ -439,13 +397,6 @@ gdjs.ComandiCode.eventsList6(runtimeScene);
 
 };gdjs.ComandiCode.eventsList8 = function(runtimeScene) {
 
-{
-
-
-
-}
-
-
 };gdjs.ComandiCode.eventsList9 = function(runtimeScene) {
 
 };gdjs.ComandiCode.mapOfGDgdjs_9546ComandiCode_9546GDPlayerObjects2Objects = Hashtable.newFrom({"Player": gdjs.ComandiCode.GDPlayerObjects2});
@@ -453,13 +404,6 @@ gdjs.ComandiCode.mapOfGDgdjs_9546ComandiCode_9546GDPortalObjects2Objects = Hasht
 gdjs.ComandiCode.mapOfGDgdjs_9546ComandiCode_9546GDPlayerObjects2Objects = Hashtable.newFrom({"Player": gdjs.ComandiCode.GDPlayerObjects2});
 gdjs.ComandiCode.mapOfGDgdjs_9546ComandiCode_9546GDPortalObjects2Objects = Hashtable.newFrom({"Portal": gdjs.ComandiCode.GDPortalObjects2});
 gdjs.ComandiCode.eventsList10 = function(runtimeScene) {
-
-{
-
-
-
-}
-
 
 {
 
@@ -486,7 +430,7 @@ let isConditionTrue_0 = false;
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(28797812);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(32645708);
 }
 if (isConditionTrue_0) {
 gdjs.copyArray(runtimeScene.getObjects("GameOverDialog"), gdjs.ComandiCode.GDGameOverDialogObjects2);
@@ -543,13 +487,6 @@ gdjs.ComandiCode.eventsList11(runtimeScene);} //End of subevents
 {
 
 
-
-}
-
-
-{
-
-
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.runtimeScene.sceneJustBegins(runtimeScene);
@@ -557,13 +494,6 @@ if (isConditionTrue_0) {
 {gdjs.evtTools.camera.hideLayer(runtimeScene, "EndScreen");
 }
 }
-
-}
-
-
-{
-
-
 
 }
 
@@ -578,7 +508,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.ComandiCode.mapOfGDgdjs_9546ComandiCode_9546GDPlayerObjects2Objects, gdjs.ComandiCode.mapOfGDgdjs_9546ComandiCode_9546GDPortalObjects2Objects, false, runtimeScene, false);
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(28794884);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(32642780);
 }
 }
 if (isConditionTrue_0) {
@@ -637,20 +567,6 @@ for(var i = 0, len = gdjs.ComandiCode.GDBottomBoundaryObjects3.length ;i < len;+
 {
 
 
-
-}
-
-
-{
-
-
-
-}
-
-
-{
-
-
 let isConditionTrue_0 = false;
 {
 gdjs.copyArray(runtimeScene.getObjects("BottomBoundary"), gdjs.ComandiCode.GDBottomBoundaryObjects2);
@@ -697,13 +613,6 @@ if (isConditionTrue_0) {
 }
 
 
-{
-
-
-
-}
-
-
 };gdjs.ComandiCode.eventsList17 = function(runtimeScene) {
 
 {
@@ -730,13 +639,6 @@ gdjs.ComandiCode.eventsList16(runtimeScene);
 };gdjs.ComandiCode.mapOfGDgdjs_9546ComandiCode_9546GDtavoloObjects1Objects = Hashtable.newFrom({"tavolo": gdjs.ComandiCode.GDtavoloObjects1});
 gdjs.ComandiCode.mapOfGDgdjs_9546ComandiCode_9546GDNewTiledSprite2Objects1Objects = Hashtable.newFrom({"NewTiledSprite2": gdjs.ComandiCode.GDNewTiledSprite2Objects1});
 gdjs.ComandiCode.eventsList18 = function(runtimeScene) {
-
-{
-
-
-
-}
-
 
 {
 

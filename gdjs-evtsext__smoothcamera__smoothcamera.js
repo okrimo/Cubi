@@ -67,104 +67,104 @@ gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera = class SmoothCamera exten
   }
 
   // Hot-reload:
-  updateFromBehaviorData(oldBehaviorData, newBehaviorData) {
+  applyBehaviorOverriding(behaviorOverriding) {
     
-    if (oldBehaviorData.LeftwardSpeed !== newBehaviorData.LeftwardSpeed)
-      this._behaviorData.LeftwardSpeed = newBehaviorData.LeftwardSpeed;
-    if (oldBehaviorData.RightwardSpeed !== newBehaviorData.RightwardSpeed)
-      this._behaviorData.RightwardSpeed = newBehaviorData.RightwardSpeed;
-    if (oldBehaviorData.UpwardSpeed !== newBehaviorData.UpwardSpeed)
-      this._behaviorData.UpwardSpeed = newBehaviorData.UpwardSpeed;
-    if (oldBehaviorData.DownwardSpeed !== newBehaviorData.DownwardSpeed)
-      this._behaviorData.DownwardSpeed = newBehaviorData.DownwardSpeed;
-    if (oldBehaviorData.FollowOnX !== newBehaviorData.FollowOnX)
-      this._behaviorData.FollowOnX = newBehaviorData.FollowOnX;
-    if (oldBehaviorData.FollowOnY !== newBehaviorData.FollowOnY)
-      this._behaviorData.FollowOnY = newBehaviorData.FollowOnY;
-    if (oldBehaviorData.FollowFreeAreaLeft !== newBehaviorData.FollowFreeAreaLeft)
-      this._behaviorData.FollowFreeAreaLeft = newBehaviorData.FollowFreeAreaLeft;
-    if (oldBehaviorData.FollowFreeAreaRight !== newBehaviorData.FollowFreeAreaRight)
-      this._behaviorData.FollowFreeAreaRight = newBehaviorData.FollowFreeAreaRight;
-    if (oldBehaviorData.FollowFreeAreaTop !== newBehaviorData.FollowFreeAreaTop)
-      this._behaviorData.FollowFreeAreaTop = newBehaviorData.FollowFreeAreaTop;
-    if (oldBehaviorData.FollowFreeAreaBottom !== newBehaviorData.FollowFreeAreaBottom)
-      this._behaviorData.FollowFreeAreaBottom = newBehaviorData.FollowFreeAreaBottom;
-    if (oldBehaviorData.CameraOffsetX !== newBehaviorData.CameraOffsetX)
-      this._behaviorData.CameraOffsetX = newBehaviorData.CameraOffsetX;
-    if (oldBehaviorData.CameraOffsetY !== newBehaviorData.CameraOffsetY)
-      this._behaviorData.CameraOffsetY = newBehaviorData.CameraOffsetY;
-    if (oldBehaviorData.CameraDelay !== newBehaviorData.CameraDelay)
-      this._behaviorData.CameraDelay = newBehaviorData.CameraDelay;
-    if (oldBehaviorData.ForecastTime !== newBehaviorData.ForecastTime)
-      this._behaviorData.ForecastTime = newBehaviorData.ForecastTime;
-    if (oldBehaviorData.ForecastHistoryDuration !== newBehaviorData.ForecastHistoryDuration)
-      this._behaviorData.ForecastHistoryDuration = newBehaviorData.ForecastHistoryDuration;
-    if (oldBehaviorData.LogLeftwardSpeed !== newBehaviorData.LogLeftwardSpeed)
-      this._behaviorData.LogLeftwardSpeed = newBehaviorData.LogLeftwardSpeed;
-    if (oldBehaviorData.LogRightwardSpeed !== newBehaviorData.LogRightwardSpeed)
-      this._behaviorData.LogRightwardSpeed = newBehaviorData.LogRightwardSpeed;
-    if (oldBehaviorData.LogDownwardSpeed !== newBehaviorData.LogDownwardSpeed)
-      this._behaviorData.LogDownwardSpeed = newBehaviorData.LogDownwardSpeed;
-    if (oldBehaviorData.LogUpwardSpeed !== newBehaviorData.LogUpwardSpeed)
-      this._behaviorData.LogUpwardSpeed = newBehaviorData.LogUpwardSpeed;
-    if (oldBehaviorData.DelayedCenterX !== newBehaviorData.DelayedCenterX)
-      this._behaviorData.DelayedCenterX = newBehaviorData.DelayedCenterX;
-    if (oldBehaviorData.DelayedCenterY !== newBehaviorData.DelayedCenterY)
-      this._behaviorData.DelayedCenterY = newBehaviorData.DelayedCenterY;
-    if (oldBehaviorData.ForecastHistoryMeanX !== newBehaviorData.ForecastHistoryMeanX)
-      this._behaviorData.ForecastHistoryMeanX = newBehaviorData.ForecastHistoryMeanX;
-    if (oldBehaviorData.ForecastHistoryMeanY !== newBehaviorData.ForecastHistoryMeanY)
-      this._behaviorData.ForecastHistoryMeanY = newBehaviorData.ForecastHistoryMeanY;
-    if (oldBehaviorData.ForecastHistoryVarianceX !== newBehaviorData.ForecastHistoryVarianceX)
-      this._behaviorData.ForecastHistoryVarianceX = newBehaviorData.ForecastHistoryVarianceX;
-    if (oldBehaviorData.ForecastHistoryCovariance !== newBehaviorData.ForecastHistoryCovariance)
-      this._behaviorData.ForecastHistoryCovariance = newBehaviorData.ForecastHistoryCovariance;
-    if (oldBehaviorData.ForecastHistoryLinearA !== newBehaviorData.ForecastHistoryLinearA)
-      this._behaviorData.ForecastHistoryLinearA = newBehaviorData.ForecastHistoryLinearA;
-    if (oldBehaviorData.ForecastHistoryLinearB !== newBehaviorData.ForecastHistoryLinearB)
-      this._behaviorData.ForecastHistoryLinearB = newBehaviorData.ForecastHistoryLinearB;
-    if (oldBehaviorData.ForecastedX !== newBehaviorData.ForecastedX)
-      this._behaviorData.ForecastedX = newBehaviorData.ForecastedX;
-    if (oldBehaviorData.ForecastedY !== newBehaviorData.ForecastedY)
-      this._behaviorData.ForecastedY = newBehaviorData.ForecastedY;
-    if (oldBehaviorData.ProjectedNewestX !== newBehaviorData.ProjectedNewestX)
-      this._behaviorData.ProjectedNewestX = newBehaviorData.ProjectedNewestX;
-    if (oldBehaviorData.ProjectedNewestY !== newBehaviorData.ProjectedNewestY)
-      this._behaviorData.ProjectedNewestY = newBehaviorData.ProjectedNewestY;
-    if (oldBehaviorData.ProjectedOldestX !== newBehaviorData.ProjectedOldestX)
-      this._behaviorData.ProjectedOldestX = newBehaviorData.ProjectedOldestX;
-    if (oldBehaviorData.ProjectedOldestY !== newBehaviorData.ProjectedOldestY)
-      this._behaviorData.ProjectedOldestY = newBehaviorData.ProjectedOldestY;
-    if (oldBehaviorData.ForecastHistoryVarianceY !== newBehaviorData.ForecastHistoryVarianceY)
-      this._behaviorData.ForecastHistoryVarianceY = newBehaviorData.ForecastHistoryVarianceY;
-    if (oldBehaviorData.Index !== newBehaviorData.Index)
-      this._behaviorData.Index = newBehaviorData.Index;
-    if (oldBehaviorData.CameraDelayCatchUpSpeed !== newBehaviorData.CameraDelayCatchUpSpeed)
-      this._behaviorData.CameraDelayCatchUpSpeed = newBehaviorData.CameraDelayCatchUpSpeed;
-    if (oldBehaviorData.CameraExtraDelay !== newBehaviorData.CameraExtraDelay)
-      this._behaviorData.CameraExtraDelay = newBehaviorData.CameraExtraDelay;
-    if (oldBehaviorData.WaitingSpeedXMax !== newBehaviorData.WaitingSpeedXMax)
-      this._behaviorData.WaitingSpeedXMax = newBehaviorData.WaitingSpeedXMax;
-    if (oldBehaviorData.WaitingSpeedYMax !== newBehaviorData.WaitingSpeedYMax)
-      this._behaviorData.WaitingSpeedYMax = newBehaviorData.WaitingSpeedYMax;
-    if (oldBehaviorData.WaitingEnd !== newBehaviorData.WaitingEnd)
-      this._behaviorData.WaitingEnd = newBehaviorData.WaitingEnd;
-    if (oldBehaviorData.CameraDelayCatchUpDuration !== newBehaviorData.CameraDelayCatchUpDuration)
-      this._behaviorData.CameraDelayCatchUpDuration = newBehaviorData.CameraDelayCatchUpDuration;
-    if (oldBehaviorData.LeftwardSpeedMax !== newBehaviorData.LeftwardSpeedMax)
-      this._behaviorData.LeftwardSpeedMax = newBehaviorData.LeftwardSpeedMax;
-    if (oldBehaviorData.RightwardSpeedMax !== newBehaviorData.RightwardSpeedMax)
-      this._behaviorData.RightwardSpeedMax = newBehaviorData.RightwardSpeedMax;
-    if (oldBehaviorData.UpwardSpeedMax !== newBehaviorData.UpwardSpeedMax)
-      this._behaviorData.UpwardSpeedMax = newBehaviorData.UpwardSpeedMax;
-    if (oldBehaviorData.DownwardSpeedMax !== newBehaviorData.DownwardSpeedMax)
-      this._behaviorData.DownwardSpeedMax = newBehaviorData.DownwardSpeedMax;
-    if (oldBehaviorData.OldX !== newBehaviorData.OldX)
-      this._behaviorData.OldX = newBehaviorData.OldX;
-    if (oldBehaviorData.OldY !== newBehaviorData.OldY)
-      this._behaviorData.OldY = newBehaviorData.OldY;
-    if (oldBehaviorData.IsCalledManually !== newBehaviorData.IsCalledManually)
-      this._behaviorData.IsCalledManually = newBehaviorData.IsCalledManually;
+    if (behaviorOverriding.LeftwardSpeed !== undefined)
+      this._behaviorData.LeftwardSpeed = behaviorOverriding.LeftwardSpeed;
+    if (behaviorOverriding.RightwardSpeed !== undefined)
+      this._behaviorData.RightwardSpeed = behaviorOverriding.RightwardSpeed;
+    if (behaviorOverriding.UpwardSpeed !== undefined)
+      this._behaviorData.UpwardSpeed = behaviorOverriding.UpwardSpeed;
+    if (behaviorOverriding.DownwardSpeed !== undefined)
+      this._behaviorData.DownwardSpeed = behaviorOverriding.DownwardSpeed;
+    if (behaviorOverriding.FollowOnX !== undefined)
+      this._behaviorData.FollowOnX = behaviorOverriding.FollowOnX;
+    if (behaviorOverriding.FollowOnY !== undefined)
+      this._behaviorData.FollowOnY = behaviorOverriding.FollowOnY;
+    if (behaviorOverriding.FollowFreeAreaLeft !== undefined)
+      this._behaviorData.FollowFreeAreaLeft = behaviorOverriding.FollowFreeAreaLeft;
+    if (behaviorOverriding.FollowFreeAreaRight !== undefined)
+      this._behaviorData.FollowFreeAreaRight = behaviorOverriding.FollowFreeAreaRight;
+    if (behaviorOverriding.FollowFreeAreaTop !== undefined)
+      this._behaviorData.FollowFreeAreaTop = behaviorOverriding.FollowFreeAreaTop;
+    if (behaviorOverriding.FollowFreeAreaBottom !== undefined)
+      this._behaviorData.FollowFreeAreaBottom = behaviorOverriding.FollowFreeAreaBottom;
+    if (behaviorOverriding.CameraOffsetX !== undefined)
+      this._behaviorData.CameraOffsetX = behaviorOverriding.CameraOffsetX;
+    if (behaviorOverriding.CameraOffsetY !== undefined)
+      this._behaviorData.CameraOffsetY = behaviorOverriding.CameraOffsetY;
+    if (behaviorOverriding.CameraDelay !== undefined)
+      this._behaviorData.CameraDelay = behaviorOverriding.CameraDelay;
+    if (behaviorOverriding.ForecastTime !== undefined)
+      this._behaviorData.ForecastTime = behaviorOverriding.ForecastTime;
+    if (behaviorOverriding.ForecastHistoryDuration !== undefined)
+      this._behaviorData.ForecastHistoryDuration = behaviorOverriding.ForecastHistoryDuration;
+    if (behaviorOverriding.LogLeftwardSpeed !== undefined)
+      this._behaviorData.LogLeftwardSpeed = behaviorOverriding.LogLeftwardSpeed;
+    if (behaviorOverriding.LogRightwardSpeed !== undefined)
+      this._behaviorData.LogRightwardSpeed = behaviorOverriding.LogRightwardSpeed;
+    if (behaviorOverriding.LogDownwardSpeed !== undefined)
+      this._behaviorData.LogDownwardSpeed = behaviorOverriding.LogDownwardSpeed;
+    if (behaviorOverriding.LogUpwardSpeed !== undefined)
+      this._behaviorData.LogUpwardSpeed = behaviorOverriding.LogUpwardSpeed;
+    if (behaviorOverriding.DelayedCenterX !== undefined)
+      this._behaviorData.DelayedCenterX = behaviorOverriding.DelayedCenterX;
+    if (behaviorOverriding.DelayedCenterY !== undefined)
+      this._behaviorData.DelayedCenterY = behaviorOverriding.DelayedCenterY;
+    if (behaviorOverriding.ForecastHistoryMeanX !== undefined)
+      this._behaviorData.ForecastHistoryMeanX = behaviorOverriding.ForecastHistoryMeanX;
+    if (behaviorOverriding.ForecastHistoryMeanY !== undefined)
+      this._behaviorData.ForecastHistoryMeanY = behaviorOverriding.ForecastHistoryMeanY;
+    if (behaviorOverriding.ForecastHistoryVarianceX !== undefined)
+      this._behaviorData.ForecastHistoryVarianceX = behaviorOverriding.ForecastHistoryVarianceX;
+    if (behaviorOverriding.ForecastHistoryCovariance !== undefined)
+      this._behaviorData.ForecastHistoryCovariance = behaviorOverriding.ForecastHistoryCovariance;
+    if (behaviorOverriding.ForecastHistoryLinearA !== undefined)
+      this._behaviorData.ForecastHistoryLinearA = behaviorOverriding.ForecastHistoryLinearA;
+    if (behaviorOverriding.ForecastHistoryLinearB !== undefined)
+      this._behaviorData.ForecastHistoryLinearB = behaviorOverriding.ForecastHistoryLinearB;
+    if (behaviorOverriding.ForecastedX !== undefined)
+      this._behaviorData.ForecastedX = behaviorOverriding.ForecastedX;
+    if (behaviorOverriding.ForecastedY !== undefined)
+      this._behaviorData.ForecastedY = behaviorOverriding.ForecastedY;
+    if (behaviorOverriding.ProjectedNewestX !== undefined)
+      this._behaviorData.ProjectedNewestX = behaviorOverriding.ProjectedNewestX;
+    if (behaviorOverriding.ProjectedNewestY !== undefined)
+      this._behaviorData.ProjectedNewestY = behaviorOverriding.ProjectedNewestY;
+    if (behaviorOverriding.ProjectedOldestX !== undefined)
+      this._behaviorData.ProjectedOldestX = behaviorOverriding.ProjectedOldestX;
+    if (behaviorOverriding.ProjectedOldestY !== undefined)
+      this._behaviorData.ProjectedOldestY = behaviorOverriding.ProjectedOldestY;
+    if (behaviorOverriding.ForecastHistoryVarianceY !== undefined)
+      this._behaviorData.ForecastHistoryVarianceY = behaviorOverriding.ForecastHistoryVarianceY;
+    if (behaviorOverriding.Index !== undefined)
+      this._behaviorData.Index = behaviorOverriding.Index;
+    if (behaviorOverriding.CameraDelayCatchUpSpeed !== undefined)
+      this._behaviorData.CameraDelayCatchUpSpeed = behaviorOverriding.CameraDelayCatchUpSpeed;
+    if (behaviorOverriding.CameraExtraDelay !== undefined)
+      this._behaviorData.CameraExtraDelay = behaviorOverriding.CameraExtraDelay;
+    if (behaviorOverriding.WaitingSpeedXMax !== undefined)
+      this._behaviorData.WaitingSpeedXMax = behaviorOverriding.WaitingSpeedXMax;
+    if (behaviorOverriding.WaitingSpeedYMax !== undefined)
+      this._behaviorData.WaitingSpeedYMax = behaviorOverriding.WaitingSpeedYMax;
+    if (behaviorOverriding.WaitingEnd !== undefined)
+      this._behaviorData.WaitingEnd = behaviorOverriding.WaitingEnd;
+    if (behaviorOverriding.CameraDelayCatchUpDuration !== undefined)
+      this._behaviorData.CameraDelayCatchUpDuration = behaviorOverriding.CameraDelayCatchUpDuration;
+    if (behaviorOverriding.LeftwardSpeedMax !== undefined)
+      this._behaviorData.LeftwardSpeedMax = behaviorOverriding.LeftwardSpeedMax;
+    if (behaviorOverriding.RightwardSpeedMax !== undefined)
+      this._behaviorData.RightwardSpeedMax = behaviorOverriding.RightwardSpeedMax;
+    if (behaviorOverriding.UpwardSpeedMax !== undefined)
+      this._behaviorData.UpwardSpeedMax = behaviorOverriding.UpwardSpeedMax;
+    if (behaviorOverriding.DownwardSpeedMax !== undefined)
+      this._behaviorData.DownwardSpeedMax = behaviorOverriding.DownwardSpeedMax;
+    if (behaviorOverriding.OldX !== undefined)
+      this._behaviorData.OldX = behaviorOverriding.OldX;
+    if (behaviorOverriding.OldY !== undefined)
+      this._behaviorData.OldY = behaviorOverriding.OldY;
+    if (behaviorOverriding.IsCalledManually !== undefined)
+      this._behaviorData.IsCalledManually = behaviorOverriding.IsCalledManually;
 
     return true;
   }
@@ -664,13 +664,6 @@ gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.onCreatedContext
 {
 
 
-
-}
-
-
-{
-
-
 let isConditionTrue_0 = false;
 {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.onCreatedContext.GDObjectObjects1);
@@ -914,13 +907,6 @@ gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.MoveCameraCloser
 
 
 gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.MoveCameraCloserContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
-
-{
-
-
-
-}
-
 
 {
 
@@ -1181,13 +1167,6 @@ gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.DoMoveCameraClos
 {
 
 
-
-}
-
-
-{
-
-
 let isConditionTrue_0 = false;
 {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.DoMoveCameraCloserContext.GDObjectObjects1);
@@ -1200,13 +1179,6 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__SmoothC
 }
 }
 }
-
-}
-
-
-{
-
-
 
 }
 
@@ -1338,13 +1310,6 @@ gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.WaitAndCatchUpCo
 {
 
 
-
-}
-
-
-{
-
-
 let isConditionTrue_0 = false;
 {
 {eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setWaitingEnd(gdjs.evtTools.runtimeScene.getTimeFromStartInSeconds(runtimeScene) + eventsFunctionContext.getArgument("NewWaitingDuration"))
@@ -1356,13 +1321,6 @@ let isConditionTrue_0 = false;
 {eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setCameraDelayCatchUpDuration(eventsFunctionContext.getArgument("NewCatchUpDuration"))
 }
 }
-
-}
-
-
-{
-
-
 
 }
 
@@ -3367,13 +3325,6 @@ gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.SetOffsetXContex
 {
 
 
-
-}
-
-
-{
-
-
 let isConditionTrue_0 = false;
 {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.SetOffsetXContext.GDObjectObjects1);
@@ -3662,13 +3613,6 @@ gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.SetOffsetYContex
 
 
 gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.SetOffsetYContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
-
-{
-
-
-
-}
-
 
 {
 
@@ -4349,21 +4293,7 @@ gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateDelayedPos
 
 };gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateDelayedPositionContext.eventsList1 = function(runtimeScene, eventsFunctionContext) {
 
-{
-
-
-
-}
-
-
 };gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateDelayedPositionContext.eventsList2 = function(runtimeScene, eventsFunctionContext) {
-
-{
-
-
-
-}
-
 
 {
 
@@ -4395,13 +4325,6 @@ gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateDelayedPos
 {
 
 
-
-}
-
-
-{
-
-
 let isConditionTrue_0 = false;
 {
 /* Reuse gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateDelayedPositionContext.GDObjectObjects1 */
@@ -4415,13 +4338,6 @@ let isConditionTrue_0 = false;
 
 
 };gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateDelayedPositionContext.eventsList3 = function(runtimeScene, eventsFunctionContext) {
-
-{
-
-
-
-}
-
 
 {
 
@@ -4477,13 +4393,6 @@ gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateDelayedPos
 {
 
 
-
-}
-
-
-{
-
-
 let isConditionTrue_0 = false;
 {
 gdjs.copyArray(gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateDelayedPositionContext.GDObjectObjects1, gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateDelayedPositionContext.GDObjectObjects2);
@@ -4527,30 +4436,9 @@ gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateDelayedPos
 
 };gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateDelayedPositionContext.eventsList4 = function(runtimeScene, eventsFunctionContext) {
 
-{
-
-
-
-}
-
-
 };gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateDelayedPositionContext.eventsList5 = function(runtimeScene, eventsFunctionContext) {
 
-{
-
-
-
-}
-
-
 };gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateDelayedPositionContext.eventsList6 = function(runtimeScene, eventsFunctionContext) {
-
-{
-
-
-
-}
-
 
 {
 
@@ -4586,13 +4474,6 @@ if (isConditionTrue_0) {
 }
 }
 }
-
-}
-
-
-{
-
-
 
 }
 
@@ -4769,7 +4650,7 @@ for (var i = 0, k = 0, l = gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera
 gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateDelayedPositionContext.GDObjectObjects1.length = k;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = eventsFunctionContext.getOnceTriggers().triggerOnce(26927332);
+{isConditionTrue_0 = eventsFunctionContext.getOnceTriggers().triggerOnce(30415556);
 }
 }
 if (isConditionTrue_0) {
@@ -5196,13 +5077,6 @@ gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.AddForecastHisto
 {
 
 
-
-}
-
-
-{
-
-
 let stopDoWhile_0 = false;
 do {
 gdjs.copyArray(gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.AddForecastHistoryPositionContext.GDObjectObjects1, gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.AddForecastHistoryPositionContext.GDObjectObjects2);
@@ -5493,13 +5367,6 @@ gdjs.copyArray(gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.U
 }
 
 
-{
-
-
-
-}
-
-
 };gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.eventsList4 = function(runtimeScene, eventsFunctionContext) {
 
 };gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.eventsList5 = function(runtimeScene, eventsFunctionContext) {
@@ -5525,13 +5392,6 @@ gdjs.copyArray(gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.U
 {
 
 
-
-}
-
-
-{
-
-
 gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.eventsList5(runtimeScene, eventsFunctionContext);
 }
 
@@ -5550,13 +5410,6 @@ gdjs.copyArray(gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.U
 }
 }
 }
-
-}
-
-
-{
-
-
 
 }
 
@@ -5598,28 +5451,7 @@ let isConditionTrue_0 = false;
 {
 
 
-
-}
-
-
-{
-
-
 gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.eventsList7(runtimeScene, eventsFunctionContext);
-}
-
-
-{
-
-
-
-}
-
-
-{
-
-
-
 }
 
 
@@ -5641,21 +5473,7 @@ gdjs.copyArray(gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.U
 }
 
 
-{
-
-
-
-}
-
-
 };gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.eventsList10 = function(runtimeScene, eventsFunctionContext) {
-
-{
-
-
-
-}
-
 
 {
 
@@ -5673,13 +5491,6 @@ if (isConditionTrue_0) {
 { //Subevents
 gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecastedPositionContext.eventsList6(runtimeScene, eventsFunctionContext);} //End of subevents
 }
-
-}
-
-
-{
-
-
 
 }
 
@@ -5725,13 +5536,6 @@ gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.UpdateForecasted
 {
 
 
-
-}
-
-
-{
-
-
 let isConditionTrue_0 = false;
 {
 {eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setForecastHistoryVarianceX(0)
@@ -5770,13 +5574,6 @@ if (true)
 }
 }
 }
-
-}
-
-
-{
-
-
 
 }
 
@@ -5871,13 +5668,6 @@ let isConditionTrue_0 = false;
 {eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setForecastedY(eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getDelayedCenterY())
 }
 }
-
-}
-
-
-{
-
-
 
 }
 
@@ -6010,13 +5800,6 @@ gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.ProjectHistoryEn
 
 
 gdjs.evtsExt__SmoothCamera__SmoothCamera.SmoothCamera.prototype.ProjectHistoryEndsContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
-
-{
-
-
-
-}
-
 
 {
 

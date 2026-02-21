@@ -20,10 +20,10 @@ gdjs.evtsExt__Enemy__MonsterEnemy.MonsterEnemy = class MonsterEnemy extends gdjs
   }
 
   // Hot-reload:
-  updateFromBehaviorData(oldBehaviorData, newBehaviorData) {
+  applyBehaviorOverriding(behaviorOverriding) {
     
-    if (oldBehaviorData.Animation !== newBehaviorData.Animation)
-      this._behaviorData.Animation = newBehaviorData.Animation;
+    if (behaviorOverriding.Animation !== undefined)
+      this._behaviorData.Animation = behaviorOverriding.Animation;
 
     return true;
   }
@@ -87,13 +87,6 @@ gdjs.evtsExt__Enemy__MonsterEnemy.MonsterEnemy.prototype.onCreatedContext.GDObje
 
 
 gdjs.evtsExt__Enemy__MonsterEnemy.MonsterEnemy.prototype.onCreatedContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
-
-{
-
-
-
-}
-
 
 {
 
@@ -198,13 +191,6 @@ gdjs.evtsExt__Enemy__MonsterEnemy.MonsterEnemy.prototype.doStepPreEventsContext.
 
 
 gdjs.evtsExt__Enemy__MonsterEnemy.MonsterEnemy.prototype.doStepPreEventsContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
-
-{
-
-
-
-}
-
 
 {
 

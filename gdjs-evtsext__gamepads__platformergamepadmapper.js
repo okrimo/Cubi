@@ -25,20 +25,20 @@ gdjs.evtsExt__Gamepads__PlatformerGamepadMapper.PlatformerGamepadMapper = class 
   }
 
   // Hot-reload:
-  updateFromBehaviorData(oldBehaviorData, newBehaviorData) {
+  applyBehaviorOverriding(behaviorOverriding) {
     
-    if (oldBehaviorData.PlatformerCharacter !== newBehaviorData.PlatformerCharacter)
-      this._behaviorData.PlatformerCharacter = newBehaviorData.PlatformerCharacter;
-    if (oldBehaviorData.GamepadIdentifier !== newBehaviorData.GamepadIdentifier)
-      this._behaviorData.GamepadIdentifier = newBehaviorData.GamepadIdentifier;
-    if (oldBehaviorData.UseArrows !== newBehaviorData.UseArrows)
-      this._behaviorData.UseArrows = newBehaviorData.UseArrows;
-    if (oldBehaviorData.UseLeftStick !== newBehaviorData.UseLeftStick)
-      this._behaviorData.UseLeftStick = newBehaviorData.UseLeftStick;
-    if (oldBehaviorData.UseRightStick !== newBehaviorData.UseRightStick)
-      this._behaviorData.UseRightStick = newBehaviorData.UseRightStick;
-    if (oldBehaviorData.JumpButton !== newBehaviorData.JumpButton)
-      this._behaviorData.JumpButton = newBehaviorData.JumpButton;
+    if (behaviorOverriding.PlatformerCharacter !== undefined)
+      this._behaviorData.PlatformerCharacter = behaviorOverriding.PlatformerCharacter;
+    if (behaviorOverriding.GamepadIdentifier !== undefined)
+      this._behaviorData.GamepadIdentifier = behaviorOverriding.GamepadIdentifier;
+    if (behaviorOverriding.UseArrows !== undefined)
+      this._behaviorData.UseArrows = behaviorOverriding.UseArrows;
+    if (behaviorOverriding.UseLeftStick !== undefined)
+      this._behaviorData.UseLeftStick = behaviorOverriding.UseLeftStick;
+    if (behaviorOverriding.UseRightStick !== undefined)
+      this._behaviorData.UseRightStick = behaviorOverriding.UseRightStick;
+    if (behaviorOverriding.JumpButton !== undefined)
+      this._behaviorData.JumpButton = behaviorOverriding.JumpButton;
 
     return true;
   }

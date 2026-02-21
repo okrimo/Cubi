@@ -5,8 +5,8 @@ gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton = gdjs.evtsExt__PanelSpriteBu
  * Object generated from Button (panel sprite)
  */
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton = class PanelSpriteButton extends gdjs.CustomRuntimeObject2D {
-  constructor(parentInstanceContainer, objectData) {
-    super(parentInstanceContainer, objectData);
+  constructor(parentInstanceContainer, objectData, instanceData) {
+    super(parentInstanceContainer, objectData, instanceData);
     this._parentInstanceContainer = parentInstanceContainer;
 
     this._onceTriggers = new gdjs.OnceTriggers();
@@ -99,13 +99,6 @@ gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.o
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.onCreatedContext.mapOfGDgdjs_9546evtsExt_9595_9595PanelSpriteButton_9595_9595PanelSpriteButton_9546PanelSpriteButton_9546prototype_9546onCreatedContext_9546GDHoveredObjects1Objects = Hashtable.newFrom({"Hovered": gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.onCreatedContext.GDHoveredObjects1});
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.onCreatedContext.mapOfGDgdjs_9546evtsExt_9595_9595PanelSpriteButton_9595_9595PanelSpriteButton_9546PanelSpriteButton_9546prototype_9546onCreatedContext_9546GDPressedObjects1Objects = Hashtable.newFrom({"Pressed": gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.onCreatedContext.GDPressedObjects1});
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.onCreatedContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
-
-{
-
-
-
-}
-
 
 {
 
@@ -532,13 +525,6 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Hovered"), gdjs.evtsExt__PanelS
 
 {
 
-
-
-}
-
-
-{
-
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.doStepPostEventsContext.GDObjectObjects2);
 
 let isConditionTrue_0 = false;
@@ -553,7 +539,7 @@ for (var i = 0, k = 0, l = gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.Pa
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.doStepPostEventsContext.GDObjectObjects2.length = k;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = eventsFunctionContext.getOnceTriggers().triggerOnce(26594044);
+{isConditionTrue_0 = eventsFunctionContext.getOnceTriggers().triggerOnce(30078676);
 }
 }
 if (isConditionTrue_0) {
@@ -625,7 +611,7 @@ for (var i = 0, k = 0, l = gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.Pa
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.doStepPostEventsContext.GDObjectObjects2.length = k;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = eventsFunctionContext.getOnceTriggers().triggerOnce(26599420);
+{isConditionTrue_0 = eventsFunctionContext.getOnceTriggers().triggerOnce(30084052);
 }
 }
 if (isConditionTrue_0) {
@@ -678,7 +664,7 @@ for (var i = 0, k = 0, l = gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.Pa
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.doStepPostEventsContext.GDObjectObjects2.length = k;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = eventsFunctionContext.getOnceTriggers().triggerOnce(26601780);
+{isConditionTrue_0 = eventsFunctionContext.getOnceTriggers().triggerOnce(30086412);
 }
 }
 if (isConditionTrue_0) {
@@ -723,7 +709,7 @@ for (var i = 0, k = 0, l = gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.Pa
 gdjs.evtsExt__PanelSpriteButton__PanelSpriteButton.PanelSpriteButton.prototype.doStepPostEventsContext.GDObjectObjects1.length = k;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = eventsFunctionContext.getOnceTriggers().triggerOnce(26603540);
+{isConditionTrue_0 = eventsFunctionContext.getOnceTriggers().triggerOnce(30088172);
 }
 }
 if (isConditionTrue_0) {

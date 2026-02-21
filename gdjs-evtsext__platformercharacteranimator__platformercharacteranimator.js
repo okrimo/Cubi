@@ -29,28 +29,28 @@ gdjs.evtsExt__PlatformerCharacterAnimator__PlatformerCharacterAnimator.Platforme
   }
 
   // Hot-reload:
-  updateFromBehaviorData(oldBehaviorData, newBehaviorData) {
+  applyBehaviorOverriding(behaviorOverriding) {
     
-    if (oldBehaviorData.EnableAnimationChanges !== newBehaviorData.EnableAnimationChanges)
-      this._behaviorData.EnableAnimationChanges = newBehaviorData.EnableAnimationChanges;
-    if (oldBehaviorData.EnableHorizontalFlipping !== newBehaviorData.EnableHorizontalFlipping)
-      this._behaviorData.EnableHorizontalFlipping = newBehaviorData.EnableHorizontalFlipping;
-    if (oldBehaviorData.IdleAnimationName !== newBehaviorData.IdleAnimationName)
-      this._behaviorData.IdleAnimationName = newBehaviorData.IdleAnimationName;
-    if (oldBehaviorData.RunAnimationName !== newBehaviorData.RunAnimationName)
-      this._behaviorData.RunAnimationName = newBehaviorData.RunAnimationName;
-    if (oldBehaviorData.JumpAnimationName !== newBehaviorData.JumpAnimationName)
-      this._behaviorData.JumpAnimationName = newBehaviorData.JumpAnimationName;
-    if (oldBehaviorData.FallAnimationName !== newBehaviorData.FallAnimationName)
-      this._behaviorData.FallAnimationName = newBehaviorData.FallAnimationName;
-    if (oldBehaviorData.ClimbAnimationName !== newBehaviorData.ClimbAnimationName)
-      this._behaviorData.ClimbAnimationName = newBehaviorData.ClimbAnimationName;
-    if (oldBehaviorData.PlatformerBehavior !== newBehaviorData.PlatformerBehavior)
-      this._behaviorData.PlatformerBehavior = newBehaviorData.PlatformerBehavior;
-    if (oldBehaviorData.Animation !== newBehaviorData.Animation)
-      this._behaviorData.Animation = newBehaviorData.Animation;
-    if (oldBehaviorData.Flippable !== newBehaviorData.Flippable)
-      this._behaviorData.Flippable = newBehaviorData.Flippable;
+    if (behaviorOverriding.EnableAnimationChanges !== undefined)
+      this._behaviorData.EnableAnimationChanges = behaviorOverriding.EnableAnimationChanges;
+    if (behaviorOverriding.EnableHorizontalFlipping !== undefined)
+      this._behaviorData.EnableHorizontalFlipping = behaviorOverriding.EnableHorizontalFlipping;
+    if (behaviorOverriding.IdleAnimationName !== undefined)
+      this._behaviorData.IdleAnimationName = behaviorOverriding.IdleAnimationName;
+    if (behaviorOverriding.RunAnimationName !== undefined)
+      this._behaviorData.RunAnimationName = behaviorOverriding.RunAnimationName;
+    if (behaviorOverriding.JumpAnimationName !== undefined)
+      this._behaviorData.JumpAnimationName = behaviorOverriding.JumpAnimationName;
+    if (behaviorOverriding.FallAnimationName !== undefined)
+      this._behaviorData.FallAnimationName = behaviorOverriding.FallAnimationName;
+    if (behaviorOverriding.ClimbAnimationName !== undefined)
+      this._behaviorData.ClimbAnimationName = behaviorOverriding.ClimbAnimationName;
+    if (behaviorOverriding.PlatformerBehavior !== undefined)
+      this._behaviorData.PlatformerBehavior = behaviorOverriding.PlatformerBehavior;
+    if (behaviorOverriding.Animation !== undefined)
+      this._behaviorData.Animation = behaviorOverriding.Animation;
+    if (behaviorOverriding.Flippable !== undefined)
+      this._behaviorData.Flippable = behaviorOverriding.Flippable;
 
     return true;
   }
@@ -230,7 +230,7 @@ for (var i = 0, k = 0, l = gdjs.evtsExt__PlatformerCharacterAnimator__Platformer
 gdjs.evtsExt__PlatformerCharacterAnimator__PlatformerCharacterAnimator.PlatformerCharacterAnimator.prototype.doStepPreEventsContext.GDObjectObjects2.length = k;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = eventsFunctionContext.getOnceTriggers().triggerOnce(26693340);
+{isConditionTrue_0 = eventsFunctionContext.getOnceTriggers().triggerOnce(30179172);
 }
 }
 }
@@ -271,7 +271,7 @@ for (var i = 0, k = 0, l = gdjs.evtsExt__PlatformerCharacterAnimator__Platformer
 gdjs.evtsExt__PlatformerCharacterAnimator__PlatformerCharacterAnimator.PlatformerCharacterAnimator.prototype.doStepPreEventsContext.GDObjectObjects1.length = k;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = eventsFunctionContext.getOnceTriggers().triggerOnce(26695900);
+{isConditionTrue_0 = eventsFunctionContext.getOnceTriggers().triggerOnce(30181732);
 }
 }
 }
@@ -323,7 +323,7 @@ for (var i = 0, k = 0, l = gdjs.evtsExt__PlatformerCharacterAnimator__Platformer
 gdjs.evtsExt__PlatformerCharacterAnimator__PlatformerCharacterAnimator.PlatformerCharacterAnimator.prototype.doStepPreEventsContext.GDObjectObjects3.length = k;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = eventsFunctionContext.getOnceTriggers().triggerOnce(26701828);
+{isConditionTrue_0 = eventsFunctionContext.getOnceTriggers().triggerOnce(30187660);
 }
 }
 if (isConditionTrue_0) {
@@ -353,7 +353,7 @@ for (var i = 0, k = 0, l = gdjs.evtsExt__PlatformerCharacterAnimator__Platformer
 gdjs.evtsExt__PlatformerCharacterAnimator__PlatformerCharacterAnimator.PlatformerCharacterAnimator.prototype.doStepPreEventsContext.GDObjectObjects2.length = k;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = eventsFunctionContext.getOnceTriggers().triggerOnce(26703412);
+{isConditionTrue_0 = eventsFunctionContext.getOnceTriggers().triggerOnce(30189244);
 }
 }
 if (isConditionTrue_0) {
@@ -374,7 +374,7 @@ if (isConditionTrue_0) {
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-{isConditionTrue_0 = eventsFunctionContext.getOnceTriggers().triggerOnce(26705020);
+{isConditionTrue_0 = eventsFunctionContext.getOnceTriggers().triggerOnce(30190852);
 }
 if (isConditionTrue_0) {
 gdjs.copyArray(gdjs.evtsExt__PlatformerCharacterAnimator__PlatformerCharacterAnimator.PlatformerCharacterAnimator.prototype.doStepPreEventsContext.GDObjectObjects2, gdjs.evtsExt__PlatformerCharacterAnimator__PlatformerCharacterAnimator.PlatformerCharacterAnimator.prototype.doStepPreEventsContext.GDObjectObjects3);
@@ -405,7 +405,7 @@ for (var i = 0, k = 0, l = gdjs.evtsExt__PlatformerCharacterAnimator__Platformer
 gdjs.evtsExt__PlatformerCharacterAnimator__PlatformerCharacterAnimator.PlatformerCharacterAnimator.prototype.doStepPreEventsContext.GDObjectObjects3.length = k;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = eventsFunctionContext.getOnceTriggers().triggerOnce(26706100);
+{isConditionTrue_0 = eventsFunctionContext.getOnceTriggers().triggerOnce(30191932);
 }
 }
 if (isConditionTrue_0) {
@@ -435,7 +435,7 @@ for (var i = 0, k = 0, l = gdjs.evtsExt__PlatformerCharacterAnimator__Platformer
 gdjs.evtsExt__PlatformerCharacterAnimator__PlatformerCharacterAnimator.PlatformerCharacterAnimator.prototype.doStepPreEventsContext.GDObjectObjects2.length = k;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = eventsFunctionContext.getOnceTriggers().triggerOnce(26707204);
+{isConditionTrue_0 = eventsFunctionContext.getOnceTriggers().triggerOnce(30193036);
 }
 }
 if (isConditionTrue_0) {
@@ -467,7 +467,7 @@ for (var i = 0, k = 0, l = gdjs.evtsExt__PlatformerCharacterAnimator__Platformer
 gdjs.evtsExt__PlatformerCharacterAnimator__PlatformerCharacterAnimator.PlatformerCharacterAnimator.prototype.doStepPreEventsContext.GDObjectObjects2.length = k;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = eventsFunctionContext.getOnceTriggers().triggerOnce(26698540);
+{isConditionTrue_0 = eventsFunctionContext.getOnceTriggers().triggerOnce(30184372);
 }
 }
 if (isConditionTrue_0) {
@@ -497,7 +497,7 @@ for (var i = 0, k = 0, l = gdjs.evtsExt__PlatformerCharacterAnimator__Platformer
 gdjs.evtsExt__PlatformerCharacterAnimator__PlatformerCharacterAnimator.PlatformerCharacterAnimator.prototype.doStepPreEventsContext.GDObjectObjects2.length = k;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = eventsFunctionContext.getOnceTriggers().triggerOnce(26700108);
+{isConditionTrue_0 = eventsFunctionContext.getOnceTriggers().triggerOnce(30185940);
 }
 }
 if (isConditionTrue_0) {
@@ -573,7 +573,7 @@ for (var i = 0, k = 0, l = gdjs.evtsExt__PlatformerCharacterAnimator__Platformer
 gdjs.evtsExt__PlatformerCharacterAnimator__PlatformerCharacterAnimator.PlatformerCharacterAnimator.prototype.doStepPreEventsContext.GDObjectObjects1.length = k;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = eventsFunctionContext.getOnceTriggers().triggerOnce(26708548);
+{isConditionTrue_0 = eventsFunctionContext.getOnceTriggers().triggerOnce(30194380);
 }
 }
 if (isConditionTrue_0) {

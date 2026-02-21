@@ -26,22 +26,22 @@ gdjs.evtsExt__SpriteMultitouchJoystick__MultitouchButton.MultitouchButton = clas
   }
 
   // Hot-reload:
-  updateFromBehaviorData(oldBehaviorData, newBehaviorData) {
+  applyBehaviorOverriding(behaviorOverriding) {
     
-    if (oldBehaviorData.ControllerIdentifier !== newBehaviorData.ControllerIdentifier)
-      this._behaviorData.ControllerIdentifier = newBehaviorData.ControllerIdentifier;
-    if (oldBehaviorData.ButtonIdentifier !== newBehaviorData.ButtonIdentifier)
-      this._behaviorData.ButtonIdentifier = newBehaviorData.ButtonIdentifier;
-    if (oldBehaviorData.TouchId !== newBehaviorData.TouchId)
-      this._behaviorData.TouchId = newBehaviorData.TouchId;
-    if (oldBehaviorData.TouchIndex !== newBehaviorData.TouchIndex)
-      this._behaviorData.TouchIndex = newBehaviorData.TouchIndex;
-    if (oldBehaviorData.IsReleased !== newBehaviorData.IsReleased)
-      this._behaviorData.IsReleased = newBehaviorData.IsReleased;
-    if (oldBehaviorData.IsJustPressed !== newBehaviorData.IsJustPressed)
-      this._behaviorData.IsJustPressed = newBehaviorData.IsJustPressed;
-    if (oldBehaviorData.Radius !== newBehaviorData.Radius)
-      this._behaviorData.Radius = newBehaviorData.Radius;
+    if (behaviorOverriding.ControllerIdentifier !== undefined)
+      this._behaviorData.ControllerIdentifier = behaviorOverriding.ControllerIdentifier;
+    if (behaviorOverriding.ButtonIdentifier !== undefined)
+      this._behaviorData.ButtonIdentifier = behaviorOverriding.ButtonIdentifier;
+    if (behaviorOverriding.TouchId !== undefined)
+      this._behaviorData.TouchId = behaviorOverriding.TouchId;
+    if (behaviorOverriding.TouchIndex !== undefined)
+      this._behaviorData.TouchIndex = behaviorOverriding.TouchIndex;
+    if (behaviorOverriding.IsReleased !== undefined)
+      this._behaviorData.IsReleased = behaviorOverriding.IsReleased;
+    if (behaviorOverriding.IsJustPressed !== undefined)
+      this._behaviorData.IsJustPressed = behaviorOverriding.IsJustPressed;
+    if (behaviorOverriding.Radius !== undefined)
+      this._behaviorData.Radius = behaviorOverriding.Radius;
 
     return true;
   }

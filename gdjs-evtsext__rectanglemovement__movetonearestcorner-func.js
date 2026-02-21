@@ -61,13 +61,6 @@ gdjs.evtsExt__RectangleMovement__MoveToNearestCorner.eventsList1 = function(runt
 {
 
 
-
-}
-
-
-{
-
-
 let isConditionTrue_0 = false;
 {
 gdjs.copyArray(gdjs.evtsExt__RectangleMovement__MoveToNearestCorner.GDCenterObjectObjects3, gdjs.evtsExt__RectangleMovement__MoveToNearestCorner.GDCenterObjectObjects4);
@@ -83,13 +76,6 @@ gdjs.copyArray(gdjs.evtsExt__RectangleMovement__MoveToNearestCorner.GDMovingObje
 }
 }
 }
-
-}
-
-
-{
-
-
 
 }
 
@@ -123,13 +109,6 @@ if (isConditionTrue_0) {
 
 {
 
-
-
-}
-
-
-{
-
 gdjs.copyArray(gdjs.evtsExt__RectangleMovement__MoveToNearestCorner.GDCenterObjectObjects3, gdjs.evtsExt__RectangleMovement__MoveToNearestCorner.GDCenterObjectObjects4);
 
 gdjs.copyArray(gdjs.evtsExt__RectangleMovement__MoveToNearestCorner.GDMovingObjectObjects3, gdjs.evtsExt__RectangleMovement__MoveToNearestCorner.GDMovingObjectObjects4);
@@ -151,13 +130,6 @@ if (isConditionTrue_0) {
 }
 }
 }
-
-}
-
-
-{
-
-
 
 }
 

@@ -21,13 +21,6 @@ gdjs.evtsExt__RectangleMovement__DistanceToClosestEdge.eventsList0 = function(ru
 
 {
 
-
-
-}
-
-
-{
-
 gdjs.copyArray(eventsFunctionContext.getObjects("CenterObject"), gdjs.evtsExt__RectangleMovement__DistanceToClosestEdge.GDCenterObjectObjects1);
 gdjs.copyArray(eventsFunctionContext.getObjects("MovingObject"), gdjs.evtsExt__RectangleMovement__DistanceToClosestEdge.GDMovingObjectObjects1);
 
@@ -79,13 +72,6 @@ if (isConditionTrue_0) {
 /* Reuse gdjs.evtsExt__RectangleMovement__DistanceToClosestEdge.GDMovingObjectObjects1 */
 {eventsFunctionContext.returnValue = Math.min(Math.min((( gdjs.evtsExt__RectangleMovement__DistanceToClosestEdge.GDMovingObjectObjects1.length === 0 ) ? 0 :gdjs.evtsExt__RectangleMovement__DistanceToClosestEdge.GDMovingObjectObjects1[0].getAABBCenterY()) - (( gdjs.evtsExt__RectangleMovement__DistanceToClosestEdge.GDCenterObjectObjects1.length === 0 ) ? 0 :gdjs.evtsExt__RectangleMovement__DistanceToClosestEdge.GDCenterObjectObjects1[0].getAABBTop()), (( gdjs.evtsExt__RectangleMovement__DistanceToClosestEdge.GDCenterObjectObjects1.length === 0 ) ? 0 :gdjs.evtsExt__RectangleMovement__DistanceToClosestEdge.GDCenterObjectObjects1[0].getAABBBottom()) - (( gdjs.evtsExt__RectangleMovement__DistanceToClosestEdge.GDMovingObjectObjects1.length === 0 ) ? 0 :gdjs.evtsExt__RectangleMovement__DistanceToClosestEdge.GDMovingObjectObjects1[0].getAABBCenterY())), Math.min((( gdjs.evtsExt__RectangleMovement__DistanceToClosestEdge.GDMovingObjectObjects1.length === 0 ) ? 0 :gdjs.evtsExt__RectangleMovement__DistanceToClosestEdge.GDMovingObjectObjects1[0].getAABBCenterX()) - (( gdjs.evtsExt__RectangleMovement__DistanceToClosestEdge.GDCenterObjectObjects1.length === 0 ) ? 0 :gdjs.evtsExt__RectangleMovement__DistanceToClosestEdge.GDCenterObjectObjects1[0].getAABBLeft()), (( gdjs.evtsExt__RectangleMovement__DistanceToClosestEdge.GDCenterObjectObjects1.length === 0 ) ? 0 :gdjs.evtsExt__RectangleMovement__DistanceToClosestEdge.GDCenterObjectObjects1[0].getAABBRight()) - (( gdjs.evtsExt__RectangleMovement__DistanceToClosestEdge.GDMovingObjectObjects1.length === 0 ) ? 0 :gdjs.evtsExt__RectangleMovement__DistanceToClosestEdge.GDMovingObjectObjects1[0].getAABBCenterX())));}
 }
-
-}
-
-
-{
-
-
 
 }
 

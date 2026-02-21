@@ -27,24 +27,24 @@ gdjs.evtsExt__TimedBackAndForthMovement__TimedBackAndForthMirroredMovement.Timed
   }
 
   // Hot-reload:
-  updateFromBehaviorData(oldBehaviorData, newBehaviorData) {
+  applyBehaviorOverriding(behaviorOverriding) {
     
-    if (oldBehaviorData.Flippable !== newBehaviorData.Flippable)
-      this._behaviorData.Flippable = newBehaviorData.Flippable;
-    if (oldBehaviorData.Vertical !== newBehaviorData.Vertical)
-      this._behaviorData.Vertical = newBehaviorData.Vertical;
-    if (oldBehaviorData.Speed !== newBehaviorData.Speed)
-      this._behaviorData.Speed = newBehaviorData.Speed;
-    if (oldBehaviorData.Distance !== newBehaviorData.Distance)
-      this._behaviorData.Distance = newBehaviorData.Distance;
-    if (oldBehaviorData.Timeout !== newBehaviorData.Timeout)
-      this._behaviorData.Timeout = newBehaviorData.Timeout;
-    if (oldBehaviorData.StartPosition !== newBehaviorData.StartPosition)
-      this._behaviorData.StartPosition = newBehaviorData.StartPosition;
-    if (oldBehaviorData.LastPosition !== newBehaviorData.LastPosition)
-      this._behaviorData.LastPosition = newBehaviorData.LastPosition;
-    if (oldBehaviorData.Timecheck !== newBehaviorData.Timecheck)
-      this._behaviorData.Timecheck = newBehaviorData.Timecheck;
+    if (behaviorOverriding.Flippable !== undefined)
+      this._behaviorData.Flippable = behaviorOverriding.Flippable;
+    if (behaviorOverriding.Vertical !== undefined)
+      this._behaviorData.Vertical = behaviorOverriding.Vertical;
+    if (behaviorOverriding.Speed !== undefined)
+      this._behaviorData.Speed = behaviorOverriding.Speed;
+    if (behaviorOverriding.Distance !== undefined)
+      this._behaviorData.Distance = behaviorOverriding.Distance;
+    if (behaviorOverriding.Timeout !== undefined)
+      this._behaviorData.Timeout = behaviorOverriding.Timeout;
+    if (behaviorOverriding.StartPosition !== undefined)
+      this._behaviorData.StartPosition = behaviorOverriding.StartPosition;
+    if (behaviorOverriding.LastPosition !== undefined)
+      this._behaviorData.LastPosition = behaviorOverriding.LastPosition;
+    if (behaviorOverriding.Timecheck !== undefined)
+      this._behaviorData.Timecheck = behaviorOverriding.Timecheck;
 
     return true;
   }
@@ -176,13 +176,6 @@ gdjs.evtsExt__TimedBackAndForthMovement__TimedBackAndForthMirroredMovement.Timed
 
 
 gdjs.evtsExt__TimedBackAndForthMovement__TimedBackAndForthMirroredMovement.TimedBackAndForthMirroredMovement.prototype.doStepPreEventsContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
-
-{
-
-
-
-}
-
 
 {
 
@@ -359,13 +352,6 @@ if (isConditionTrue_0) {
 
 {
 
-
-
-}
-
-
-{
-
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__TimedBackAndForthMovement__TimedBackAndForthMirroredMovement.TimedBackAndForthMirroredMovement.prototype.doStepPreEventsContext.GDObjectObjects2);
 
 let isConditionTrue_0 = false;
@@ -456,13 +442,6 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__TimedBa
 {
 
 
-
-}
-
-
-{
-
-
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
 {isConditionTrue_0 = (eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getStartPosition() == 0);
@@ -502,13 +481,6 @@ gdjs.evtsExt__TimedBackAndForthMovement__TimedBackAndForthMirroredMovement.Timed
 
 
 };gdjs.evtsExt__TimedBackAndForthMovement__TimedBackAndForthMirroredMovement.TimedBackAndForthMirroredMovement.prototype.doStepPreEventsContext.eventsList5 = function(runtimeScene, eventsFunctionContext) {
-
-{
-
-
-
-}
-
 
 {
 
@@ -685,13 +657,6 @@ if (isConditionTrue_0) {
 
 {
 
-
-
-}
-
-
-{
-
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__TimedBackAndForthMovement__TimedBackAndForthMirroredMovement.TimedBackAndForthMirroredMovement.prototype.doStepPreEventsContext.GDObjectObjects2);
 
 let isConditionTrue_0 = false;
@@ -782,13 +747,6 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__TimedBa
 {
 
 
-
-}
-
-
-{
-
-
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
 {isConditionTrue_0 = (eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getStartPosition() == 0);
@@ -832,13 +790,6 @@ gdjs.evtsExt__TimedBackAndForthMovement__TimedBackAndForthMirroredMovement.Timed
 {
 
 
-
-}
-
-
-{
-
-
 let isConditionTrue_0 = false;
 {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__TimedBackAndForthMovement__TimedBackAndForthMirroredMovement.TimedBackAndForthMirroredMovement.prototype.doStepPreEventsContext.GDObjectObjects1);
@@ -854,13 +805,6 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__TimedBa
 {
 
 
-
-}
-
-
-{
-
-
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
 {isConditionTrue_0 = eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getVertical();
@@ -870,13 +814,6 @@ if (isConditionTrue_0) {
 { //Subevents
 gdjs.evtsExt__TimedBackAndForthMovement__TimedBackAndForthMirroredMovement.TimedBackAndForthMirroredMovement.prototype.doStepPreEventsContext.eventsList4(runtimeScene, eventsFunctionContext);} //End of subevents
 }
-
-}
-
-
-{
-
-
 
 }
 

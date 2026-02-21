@@ -90,13 +90,6 @@ gdjs.evtsExt__RectangleMovement__MoveAlongBorderOfObject.eventsList2 = function(
 
 {
 
-
-
-}
-
-
-{
-
 gdjs.copyArray(gdjs.evtsExt__RectangleMovement__MoveAlongBorderOfObject.GDCenterObjectObjects4, gdjs.evtsExt__RectangleMovement__MoveAlongBorderOfObject.GDCenterObjectObjects5);
 
 gdjs.copyArray(gdjs.evtsExt__RectangleMovement__MoveAlongBorderOfObject.GDMovingObjectObjects2, gdjs.evtsExt__RectangleMovement__MoveAlongBorderOfObject.GDMovingObjectObjects5);

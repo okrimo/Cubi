@@ -122,13 +122,6 @@ gdjs.StartCode.eventsList0 = function(runtimeScene) {
 {
 
 
-
-}
-
-
-{
-
-
 gdjs.StartCode.eventsList0(runtimeScene);
 }
 
@@ -137,13 +130,6 @@ gdjs.StartCode.eventsList0(runtimeScene);
 
 };gdjs.StartCode.mapOfGDgdjs_9546StartCode_9546GDPlayerObjects1Objects = Hashtable.newFrom({"Player": gdjs.StartCode.GDPlayerObjects1});
 gdjs.StartCode.eventsList3 = function(runtimeScene) {
-
-{
-
-
-
-}
-
 
 {
 
@@ -186,13 +172,6 @@ gdjs.StartCode.eventsList3(runtimeScene);
 
 };gdjs.StartCode.eventsList5 = function(runtimeScene) {
 
-{
-
-
-
-}
-
-
 };gdjs.StartCode.eventsList6 = function(runtimeScene) {
 
 };gdjs.StartCode.eventsList7 = function(runtimeScene) {
@@ -226,20 +205,6 @@ for(var i = 0, len = gdjs.StartCode.GDBottomBoundaryObjects3.length ;i < len;++i
 }
 }
 }
-
-}
-
-
-{
-
-
-
-}
-
-
-{
-
-
 
 }
 
@@ -293,13 +258,6 @@ if (isConditionTrue_0) {
 }
 
 
-{
-
-
-
-}
-
-
 };gdjs.StartCode.eventsList10 = function(runtimeScene) {
 
 {
@@ -326,13 +284,6 @@ gdjs.StartCode.eventsList9(runtimeScene);
 };gdjs.StartCode.mapOfGDgdjs_9546StartCode_9546GDtavoloObjects1Objects = Hashtable.newFrom({"tavolo": gdjs.StartCode.GDtavoloObjects1});
 gdjs.StartCode.mapOfGDgdjs_9546StartCode_9546GDNewTiledSprite2Objects1Objects = Hashtable.newFrom({"NewTiledSprite2": gdjs.StartCode.GDNewTiledSprite2Objects1});
 gdjs.StartCode.eventsList11 = function(runtimeScene) {
-
-{
-
-
-
-}
-
 
 {
 
@@ -476,34 +427,6 @@ if (isConditionTrue_0) {
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "Crediti", false);
 }
 }
-
-}
-
-
-{
-
-
-
-}
-
-
-{
-
-
-
-}
-
-
-{
-
-
-
-}
-
-
-{
-
-
 
 }
 

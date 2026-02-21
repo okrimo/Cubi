@@ -5,8 +5,8 @@ gdjs.evtsExt__GameOverDialog__GameOverDialog = gdjs.evtsExt__GameOverDialog__Gam
  * Object generated from 
  */
 gdjs.evtsExt__GameOverDialog__GameOverDialog.GameOverDialog = class GameOverDialog extends gdjs.CustomRuntimeObject2D {
-  constructor(parentInstanceContainer, objectData) {
-    super(parentInstanceContainer, objectData);
+  constructor(parentInstanceContainer, objectData, instanceData) {
+    super(parentInstanceContainer, objectData, instanceData);
     this._parentInstanceContainer = parentInstanceContainer;
 
     this._onceTriggers = new gdjs.OnceTriggers();
@@ -73,13 +73,6 @@ gdjs.copyArray(eventsFunctionContext.getObjects("EndScreenSubHeader"), gdjs.evts
 }
 }
 }
-
-}
-
-
-{
-
-
 
 }
 

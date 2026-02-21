@@ -5,8 +5,8 @@ gdjs.evtsExt__ScreenOrientationChecker__ScreenOrientationChecker = gdjs.evtsExt_
  * Object generated from Screen Orientation Checker
  */
 gdjs.evtsExt__ScreenOrientationChecker__ScreenOrientationChecker.ScreenOrientationChecker = class ScreenOrientationChecker extends gdjs.CustomRuntimeObject2D {
-  constructor(parentInstanceContainer, objectData) {
-    super(parentInstanceContainer, objectData);
+  constructor(parentInstanceContainer, objectData, instanceData) {
+    super(parentInstanceContainer, objectData, instanceData);
     this._parentInstanceContainer = parentInstanceContainer;
 
     this._onceTriggers = new gdjs.OnceTriggers();
@@ -332,13 +332,6 @@ gdjs.evtsExt__ScreenOrientationChecker__ScreenOrientationChecker.ScreenOrientati
 {
 
 
-
-}
-
-
-{
-
-
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.systemInfo.isMobile();
@@ -347,13 +340,6 @@ if (isConditionTrue_0) {
 { //Subevents
 gdjs.evtsExt__ScreenOrientationChecker__ScreenOrientationChecker.ScreenOrientationChecker.prototype.doStepPostEventsContext.eventsList2(runtimeScene, eventsFunctionContext);} //End of subevents
 }
-
-}
-
-
-{
-
-
 
 }
 
@@ -432,13 +418,6 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Text"), gdjs.evtsExt__ScreenOri
 }
 }
 }
-
-}
-
-
-{
-
-
 
 }
 

@@ -130,13 +130,6 @@ gdjs.IstruzioniCode.eventsList0 = function(runtimeScene) {
 {
 
 
-
-}
-
-
-{
-
-
 gdjs.IstruzioniCode.eventsList0(runtimeScene);
 }
 
@@ -145,13 +138,6 @@ gdjs.IstruzioniCode.eventsList0(runtimeScene);
 
 };gdjs.IstruzioniCode.mapOfGDgdjs_9546IstruzioniCode_9546GDPlayerObjects1Objects = Hashtable.newFrom({"Player": gdjs.IstruzioniCode.GDPlayerObjects1});
 gdjs.IstruzioniCode.eventsList3 = function(runtimeScene) {
-
-{
-
-
-
-}
-
 
 {
 
@@ -194,13 +180,6 @@ gdjs.IstruzioniCode.eventsList3(runtimeScene);
 
 };gdjs.IstruzioniCode.eventsList5 = function(runtimeScene) {
 
-{
-
-
-
-}
-
-
 };gdjs.IstruzioniCode.eventsList6 = function(runtimeScene) {
 
 };gdjs.IstruzioniCode.eventsList7 = function(runtimeScene) {
@@ -234,20 +213,6 @@ for(var i = 0, len = gdjs.IstruzioniCode.GDBottomBoundaryObjects3.length ;i < le
 }
 }
 }
-
-}
-
-
-{
-
-
-
-}
-
-
-{
-
-
 
 }
 
@@ -301,13 +266,6 @@ if (isConditionTrue_0) {
 }
 
 
-{
-
-
-
-}
-
-
 };gdjs.IstruzioniCode.eventsList10 = function(runtimeScene) {
 
 {
@@ -334,13 +292,6 @@ gdjs.IstruzioniCode.eventsList9(runtimeScene);
 };gdjs.IstruzioniCode.mapOfGDgdjs_9546IstruzioniCode_9546GDtavoloObjects1Objects = Hashtable.newFrom({"tavolo": gdjs.IstruzioniCode.GDtavoloObjects1});
 gdjs.IstruzioniCode.mapOfGDgdjs_9546IstruzioniCode_9546GDNewTiledSprite2Objects1Objects = Hashtable.newFrom({"NewTiledSprite2": gdjs.IstruzioniCode.GDNewTiledSprite2Objects1});
 gdjs.IstruzioniCode.eventsList11 = function(runtimeScene) {
-
-{
-
-
-
-}
-
 
 {
 

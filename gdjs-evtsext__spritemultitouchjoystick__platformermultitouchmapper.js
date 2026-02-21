@@ -23,16 +23,16 @@ gdjs.evtsExt__SpriteMultitouchJoystick__PlatformerMultitouchMapper.PlatformerMul
   }
 
   // Hot-reload:
-  updateFromBehaviorData(oldBehaviorData, newBehaviorData) {
+  applyBehaviorOverriding(behaviorOverriding) {
     
-    if (oldBehaviorData.Property !== newBehaviorData.Property)
-      this._behaviorData.Property = newBehaviorData.Property;
-    if (oldBehaviorData.ControllerIdentifier !== newBehaviorData.ControllerIdentifier)
-      this._behaviorData.ControllerIdentifier = newBehaviorData.ControllerIdentifier;
-    if (oldBehaviorData.JoystickIdentifier !== newBehaviorData.JoystickIdentifier)
-      this._behaviorData.JoystickIdentifier = newBehaviorData.JoystickIdentifier;
-    if (oldBehaviorData.JumpButton !== newBehaviorData.JumpButton)
-      this._behaviorData.JumpButton = newBehaviorData.JumpButton;
+    if (behaviorOverriding.Property !== undefined)
+      this._behaviorData.Property = behaviorOverriding.Property;
+    if (behaviorOverriding.ControllerIdentifier !== undefined)
+      this._behaviorData.ControllerIdentifier = behaviorOverriding.ControllerIdentifier;
+    if (behaviorOverriding.JoystickIdentifier !== undefined)
+      this._behaviorData.JoystickIdentifier = behaviorOverriding.JoystickIdentifier;
+    if (behaviorOverriding.JumpButton !== undefined)
+      this._behaviorData.JumpButton = behaviorOverriding.JumpButton;
 
     return true;
   }

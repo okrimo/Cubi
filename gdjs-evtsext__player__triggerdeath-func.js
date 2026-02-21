@@ -18,13 +18,6 @@ gdjs.evtsExt__Player__TriggerDeath.eventsList0 = function(runtimeScene, eventsFu
 {
 
 
-
-}
-
-
-{
-
-
 let isConditionTrue_0 = false;
 {
 gdjs.copyArray(eventsFunctionContext.getObjects("Player"), gdjs.evtsExt__Player__TriggerDeath.GDPlayerObjects1);

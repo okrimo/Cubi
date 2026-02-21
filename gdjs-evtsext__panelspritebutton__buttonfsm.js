@@ -25,20 +25,20 @@ gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM = class ButtonFSM extends g
   }
 
   // Hot-reload:
-  updateFromBehaviorData(oldBehaviorData, newBehaviorData) {
+  applyBehaviorOverriding(behaviorOverriding) {
     
-    if (oldBehaviorData.ShouldCheckHovering !== newBehaviorData.ShouldCheckHovering)
-      this._behaviorData.ShouldCheckHovering = newBehaviorData.ShouldCheckHovering;
-    if (oldBehaviorData.State !== newBehaviorData.State)
-      this._behaviorData.State = newBehaviorData.State;
-    if (oldBehaviorData.TouchId !== newBehaviorData.TouchId)
-      this._behaviorData.TouchId = newBehaviorData.TouchId;
-    if (oldBehaviorData.TouchIsInside !== newBehaviorData.TouchIsInside)
-      this._behaviorData.TouchIsInside = newBehaviorData.TouchIsInside;
-    if (oldBehaviorData.MouseIsInside !== newBehaviorData.MouseIsInside)
-      this._behaviorData.MouseIsInside = newBehaviorData.MouseIsInside;
-    if (oldBehaviorData.Index !== newBehaviorData.Index)
-      this._behaviorData.Index = newBehaviorData.Index;
+    if (behaviorOverriding.ShouldCheckHovering !== undefined)
+      this._behaviorData.ShouldCheckHovering = behaviorOverriding.ShouldCheckHovering;
+    if (behaviorOverriding.State !== undefined)
+      this._behaviorData.State = behaviorOverriding.State;
+    if (behaviorOverriding.TouchId !== undefined)
+      this._behaviorData.TouchId = behaviorOverriding.TouchId;
+    if (behaviorOverriding.TouchIsInside !== undefined)
+      this._behaviorData.TouchIsInside = behaviorOverriding.TouchIsInside;
+    if (behaviorOverriding.MouseIsInside !== undefined)
+      this._behaviorData.MouseIsInside = behaviorOverriding.MouseIsInside;
+    if (behaviorOverriding.Index !== undefined)
+      this._behaviorData.Index = behaviorOverriding.Index;
 
     return true;
   }
@@ -165,13 +165,6 @@ gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsC
 {
 
 
-
-}
-
-
-{
-
-
 let isConditionTrue_0 = false;
 {
 {eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setMouseIsInside(false)
@@ -204,13 +197,6 @@ if (isConditionTrue_0) {
 {eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setMouseIsInside(true)
 }
 }
-
-}
-
-
-{
-
-
 
 }
 
@@ -534,13 +520,6 @@ gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsC
 
 
 };gdjs.evtsExt__PanelSpriteButton__ButtonFSM.ButtonFSM.prototype.doStepPostEventsContext.eventsList8 = function(runtimeScene, eventsFunctionContext) {
-
-{
-
-
-
-}
-
 
 {
 

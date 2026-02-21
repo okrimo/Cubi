@@ -21,12 +21,12 @@ gdjs.evtsExt__Parallax__HorizontalTiledSpriteParallax.HorizontalTiledSpriteParal
   }
 
   // Hot-reload:
-  updateFromBehaviorData(oldBehaviorData, newBehaviorData) {
+  applyBehaviorOverriding(behaviorOverriding) {
     
-    if (oldBehaviorData.ParallaxFactor !== newBehaviorData.ParallaxFactor)
-      this._behaviorData.ParallaxFactor = newBehaviorData.ParallaxFactor;
-    if (oldBehaviorData.FollowedLayer !== newBehaviorData.FollowedLayer)
-      this._behaviorData.FollowedLayer = newBehaviorData.FollowedLayer;
+    if (behaviorOverriding.ParallaxFactor !== undefined)
+      this._behaviorData.ParallaxFactor = behaviorOverriding.ParallaxFactor;
+    if (behaviorOverriding.FollowedLayer !== undefined)
+      this._behaviorData.FollowedLayer = behaviorOverriding.FollowedLayer;
 
     return true;
   }
@@ -99,13 +99,6 @@ gdjs.evtsExt__Parallax__HorizontalTiledSpriteParallax.HorizontalTiledSpriteParal
 
 
 gdjs.evtsExt__Parallax__HorizontalTiledSpriteParallax.HorizontalTiledSpriteParallax.prototype.doStepPostEventsContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
-
-{
-
-
-
-}
-
 
 {
 

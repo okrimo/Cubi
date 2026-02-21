@@ -162,25 +162,11 @@ gdjs.CreditiCode.eventsList0 = function(runtimeScene) {
 {
 
 
-
-}
-
-
-{
-
-
 gdjs.CreditiCode.eventsList0(runtimeScene);
 }
 
 
 };gdjs.CreditiCode.eventsList2 = function(runtimeScene) {
-
-{
-
-
-
-}
-
 
 };gdjs.CreditiCode.eventsList3 = function(runtimeScene) {
 
@@ -215,20 +201,6 @@ for(var i = 0, len = gdjs.CreditiCode.GDBottomBoundaryObjects3.length ;i < len;+
 }
 }
 }
-
-}
-
-
-{
-
-
-
-}
-
-
-{
-
-
 
 }
 
@@ -282,13 +254,6 @@ if (isConditionTrue_0) {
 }
 
 
-{
-
-
-
-}
-
-
 };gdjs.CreditiCode.eventsList7 = function(runtimeScene) {
 
 {
@@ -313,13 +278,6 @@ gdjs.CreditiCode.eventsList6(runtimeScene);
 
 
 };gdjs.CreditiCode.eventsList8 = function(runtimeScene) {
-
-{
-
-
-
-}
-
 
 {
 

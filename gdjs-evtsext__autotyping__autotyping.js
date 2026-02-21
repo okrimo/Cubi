@@ -24,18 +24,18 @@ gdjs.evtsExt__AutoTyping__AutoTyping.AutoTyping = class AutoTyping extends gdjs.
   }
 
   // Hot-reload:
-  updateFromBehaviorData(oldBehaviorData, newBehaviorData) {
+  applyBehaviorOverriding(behaviorOverriding) {
     
-    if (oldBehaviorData.Text !== newBehaviorData.Text)
-      this._behaviorData.Text = newBehaviorData.Text;
-    if (oldBehaviorData.Interval !== newBehaviorData.Interval)
-      this._behaviorData.Interval = newBehaviorData.Interval;
-    if (oldBehaviorData.CharacterJustAdded !== newBehaviorData.CharacterJustAdded)
-      this._behaviorData.CharacterJustAdded = newBehaviorData.CharacterJustAdded;
-    if (oldBehaviorData.FullText !== newBehaviorData.FullText)
-      this._behaviorData.FullText = newBehaviorData.FullText;
-    if (oldBehaviorData.TypedText !== newBehaviorData.TypedText)
-      this._behaviorData.TypedText = newBehaviorData.TypedText;
+    if (behaviorOverriding.Text !== undefined)
+      this._behaviorData.Text = behaviorOverriding.Text;
+    if (behaviorOverriding.Interval !== undefined)
+      this._behaviorData.Interval = behaviorOverriding.Interval;
+    if (behaviorOverriding.CharacterJustAdded !== undefined)
+      this._behaviorData.CharacterJustAdded = behaviorOverriding.CharacterJustAdded;
+    if (behaviorOverriding.FullText !== undefined)
+      this._behaviorData.FullText = behaviorOverriding.FullText;
+    if (behaviorOverriding.TypedText !== undefined)
+      this._behaviorData.TypedText = behaviorOverriding.TypedText;
 
     return true;
   }
@@ -556,13 +556,6 @@ let isConditionTrue_0 = false;
 
 
 };gdjs.evtsExt__AutoTyping__AutoTyping.AutoTyping.prototype.IsNextWordWrappedContext.eventsList1 = function(runtimeScene, eventsFunctionContext) {
-
-{
-
-
-
-}
-
 
 {
 

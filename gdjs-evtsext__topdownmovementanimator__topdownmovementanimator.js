@@ -27,24 +27,24 @@ gdjs.evtsExt__TopDownMovementAnimator__TopDownMovementAnimator.TopDownMovementAn
   }
 
   // Hot-reload:
-  updateFromBehaviorData(oldBehaviorData, newBehaviorData) {
+  applyBehaviorOverriding(behaviorOverriding) {
     
-    if (oldBehaviorData.Animation !== newBehaviorData.Animation)
-      this._behaviorData.Animation = newBehaviorData.Animation;
-    if (oldBehaviorData.TopDownMovement !== newBehaviorData.TopDownMovement)
-      this._behaviorData.TopDownMovement = newBehaviorData.TopDownMovement;
-    if (oldBehaviorData.IsScalingAnimation !== newBehaviorData.IsScalingAnimation)
-      this._behaviorData.IsScalingAnimation = newBehaviorData.IsScalingAnimation;
-    if (oldBehaviorData.IsPausingAnimation !== newBehaviorData.IsPausingAnimation)
-      this._behaviorData.IsPausingAnimation = newBehaviorData.IsPausingAnimation;
-    if (oldBehaviorData.AnimationName !== newBehaviorData.AnimationName)
-      this._behaviorData.AnimationName = newBehaviorData.AnimationName;
-    if (oldBehaviorData.DirectionCount !== newBehaviorData.DirectionCount)
-      this._behaviorData.DirectionCount = newBehaviorData.DirectionCount;
-    if (oldBehaviorData.AngleOffset !== newBehaviorData.AngleOffset)
-      this._behaviorData.AngleOffset = newBehaviorData.AngleOffset;
-    if (oldBehaviorData.AnimationDirection !== newBehaviorData.AnimationDirection)
-      this._behaviorData.AnimationDirection = newBehaviorData.AnimationDirection;
+    if (behaviorOverriding.Animation !== undefined)
+      this._behaviorData.Animation = behaviorOverriding.Animation;
+    if (behaviorOverriding.TopDownMovement !== undefined)
+      this._behaviorData.TopDownMovement = behaviorOverriding.TopDownMovement;
+    if (behaviorOverriding.IsScalingAnimation !== undefined)
+      this._behaviorData.IsScalingAnimation = behaviorOverriding.IsScalingAnimation;
+    if (behaviorOverriding.IsPausingAnimation !== undefined)
+      this._behaviorData.IsPausingAnimation = behaviorOverriding.IsPausingAnimation;
+    if (behaviorOverriding.AnimationName !== undefined)
+      this._behaviorData.AnimationName = behaviorOverriding.AnimationName;
+    if (behaviorOverriding.DirectionCount !== undefined)
+      this._behaviorData.DirectionCount = behaviorOverriding.DirectionCount;
+    if (behaviorOverriding.AngleOffset !== undefined)
+      this._behaviorData.AngleOffset = behaviorOverriding.AngleOffset;
+    if (behaviorOverriding.AnimationDirection !== undefined)
+      this._behaviorData.AnimationDirection = behaviorOverriding.AnimationDirection;
 
     return true;
   }
@@ -793,13 +793,6 @@ gdjs.evtsExt__TopDownMovementAnimator__TopDownMovementAnimator.TopDownMovementAn
 
 
 gdjs.evtsExt__TopDownMovementAnimator__TopDownMovementAnimator.TopDownMovementAnimator.prototype.SetAnimationNameContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
-
-{
-
-
-
-}
-
 
 {
 
@@ -1872,13 +1865,6 @@ eventsFunctionContext.localVariables.pop();
 
 {
 
-
-
-}
-
-
-{
-
 /* Reuse gdjs.evtsExt__TopDownMovementAnimator__TopDownMovementAnimator.TopDownMovementAnimator.prototype.UpdateAnimationDirectionContext.GDObjectObjects1 */
 
 let isConditionTrue_0 = false;
@@ -1895,13 +1881,6 @@ gdjs.evtsExt__TopDownMovementAnimator__TopDownMovementAnimator.TopDownMovementAn
 
 
 };gdjs.evtsExt__TopDownMovementAnimator__TopDownMovementAnimator.TopDownMovementAnimator.prototype.UpdateAnimationDirectionContext.eventsList2 = function(runtimeScene, eventsFunctionContext) {
-
-{
-
-
-
-}
-
 
 {
 
@@ -2014,13 +1993,6 @@ gdjs.evtsExt__TopDownMovementAnimator__TopDownMovementAnimator.TopDownMovementAn
 
 
 gdjs.evtsExt__TopDownMovementAnimator__TopDownMovementAnimator.TopDownMovementAnimator.prototype.UpdateAnimationNameContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
-
-{
-
-
-
-}
-
 
 {
 

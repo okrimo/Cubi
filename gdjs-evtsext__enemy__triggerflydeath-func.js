@@ -16,13 +16,6 @@ gdjs.evtsExt__Enemy__TriggerFlyDeath.eventsList0 = function(runtimeScene, events
 {
 
 
-
-}
-
-
-{
-
-
 let isConditionTrue_0 = false;
 {
 gdjs.copyArray(eventsFunctionContext.getObjects("Fly"), gdjs.evtsExt__Enemy__TriggerFlyDeath.GDFlyObjects1);

@@ -32,34 +32,34 @@ gdjs.evtsExt__RectangleMovement__RectangleMovement.RectangleMovement = class Rec
   }
 
   // Hot-reload:
-  updateFromBehaviorData(oldBehaviorData, newBehaviorData) {
+  applyBehaviorOverriding(behaviorOverriding) {
     
-    if (oldBehaviorData.Width !== newBehaviorData.Width)
-      this._behaviorData.Width = newBehaviorData.Width;
-    if (oldBehaviorData.Height !== newBehaviorData.Height)
-      this._behaviorData.Height = newBehaviorData.Height;
-    if (oldBehaviorData.Clockwise !== newBehaviorData.Clockwise)
-      this._behaviorData.Clockwise = newBehaviorData.Clockwise;
-    if (oldBehaviorData.HorizontalEdgeDuration !== newBehaviorData.HorizontalEdgeDuration)
-      this._behaviorData.HorizontalEdgeDuration = newBehaviorData.HorizontalEdgeDuration;
-    if (oldBehaviorData.VerticalEdgeDuration !== newBehaviorData.VerticalEdgeDuration)
-      this._behaviorData.VerticalEdgeDuration = newBehaviorData.VerticalEdgeDuration;
-    if (oldBehaviorData.Left !== newBehaviorData.Left)
-      this._behaviorData.Left = newBehaviorData.Left;
-    if (oldBehaviorData.Top !== newBehaviorData.Top)
-      this._behaviorData.Top = newBehaviorData.Top;
-    if (oldBehaviorData.Progress !== newBehaviorData.Progress)
-      this._behaviorData.Progress = newBehaviorData.Progress;
-    if (oldBehaviorData.OldX !== newBehaviorData.OldX)
-      this._behaviorData.OldX = newBehaviorData.OldX;
-    if (oldBehaviorData.OldY !== newBehaviorData.OldY)
-      this._behaviorData.OldY = newBehaviorData.OldY;
-    if (oldBehaviorData.Easing !== newBehaviorData.Easing)
-      this._behaviorData.Easing = newBehaviorData.Easing;
-    if (oldBehaviorData.InitialPosition !== newBehaviorData.InitialPosition)
-      this._behaviorData.InitialPosition = newBehaviorData.InitialPosition;
-    if (oldBehaviorData.ToogleClockwise !== newBehaviorData.ToogleClockwise)
-      this._behaviorData.ToogleClockwise = newBehaviorData.ToogleClockwise;
+    if (behaviorOverriding.Width !== undefined)
+      this._behaviorData.Width = behaviorOverriding.Width;
+    if (behaviorOverriding.Height !== undefined)
+      this._behaviorData.Height = behaviorOverriding.Height;
+    if (behaviorOverriding.Clockwise !== undefined)
+      this._behaviorData.Clockwise = behaviorOverriding.Clockwise;
+    if (behaviorOverriding.HorizontalEdgeDuration !== undefined)
+      this._behaviorData.HorizontalEdgeDuration = behaviorOverriding.HorizontalEdgeDuration;
+    if (behaviorOverriding.VerticalEdgeDuration !== undefined)
+      this._behaviorData.VerticalEdgeDuration = behaviorOverriding.VerticalEdgeDuration;
+    if (behaviorOverriding.Left !== undefined)
+      this._behaviorData.Left = behaviorOverriding.Left;
+    if (behaviorOverriding.Top !== undefined)
+      this._behaviorData.Top = behaviorOverriding.Top;
+    if (behaviorOverriding.Progress !== undefined)
+      this._behaviorData.Progress = behaviorOverriding.Progress;
+    if (behaviorOverriding.OldX !== undefined)
+      this._behaviorData.OldX = behaviorOverriding.OldX;
+    if (behaviorOverriding.OldY !== undefined)
+      this._behaviorData.OldY = behaviorOverriding.OldY;
+    if (behaviorOverriding.Easing !== undefined)
+      this._behaviorData.Easing = behaviorOverriding.Easing;
+    if (behaviorOverriding.InitialPosition !== undefined)
+      this._behaviorData.InitialPosition = behaviorOverriding.InitialPosition;
+    if (behaviorOverriding.ToogleClockwise !== undefined)
+      this._behaviorData.ToogleClockwise = behaviorOverriding.ToogleClockwise;
 
     return true;
   }
@@ -256,13 +256,6 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Rectang
 {
 
 
-
-}
-
-
-{
-
-
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
 {isConditionTrue_0 = (eventsFunctionContext.getObjects("Object")[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getInitialPosition() == "Top-right corner");
@@ -410,13 +403,6 @@ gdjs.evtsExt__RectangleMovement__RectangleMovement.RectangleMovement.prototype.d
 {
 
 
-
-}
-
-
-{
-
-
 let isConditionTrue_0 = false;
 {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__RectangleMovement__RectangleMovement.RectangleMovement.prototype.doStepPreEventsContext.GDObjectObjects1);
@@ -432,13 +418,6 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Rectang
 {
 
 
-
-}
-
-
-{
-
-
 let isConditionTrue_0 = false;
 {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__RectangleMovement__RectangleMovement.RectangleMovement.prototype.doStepPreEventsContext.GDObjectObjects1);
@@ -447,13 +426,6 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Rectang
 }
 }
 }
-
-}
-
-
-{
-
-
 
 }
 
@@ -556,13 +528,6 @@ gdjs.evtsExt__RectangleMovement__RectangleMovement.RectangleMovement.prototype.d
 
 
 gdjs.evtsExt__RectangleMovement__RectangleMovement.RectangleMovement.prototype.doStepPostEventsContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
-
-{
-
-
-
-}
-
 
 {
 

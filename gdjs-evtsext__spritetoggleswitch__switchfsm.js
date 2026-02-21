@@ -23,16 +23,16 @@ gdjs.evtsExt__SpriteToggleSwitch__SwitchFSM.SwitchFSM = class SwitchFSM extends 
   }
 
   // Hot-reload:
-  updateFromBehaviorData(oldBehaviorData, newBehaviorData) {
+  applyBehaviorOverriding(behaviorOverriding) {
     
-    if (oldBehaviorData.ButtonFSM !== newBehaviorData.ButtonFSM)
-      this._behaviorData.ButtonFSM = newBehaviorData.ButtonFSM;
-    if (oldBehaviorData.IsChecked !== newBehaviorData.IsChecked)
-      this._behaviorData.IsChecked = newBehaviorData.IsChecked;
-    if (oldBehaviorData.PreviousIsChecked !== newBehaviorData.PreviousIsChecked)
-      this._behaviorData.PreviousIsChecked = newBehaviorData.PreviousIsChecked;
-    if (oldBehaviorData.WasChecked !== newBehaviorData.WasChecked)
-      this._behaviorData.WasChecked = newBehaviorData.WasChecked;
+    if (behaviorOverriding.ButtonFSM !== undefined)
+      this._behaviorData.ButtonFSM = behaviorOverriding.ButtonFSM;
+    if (behaviorOverriding.IsChecked !== undefined)
+      this._behaviorData.IsChecked = behaviorOverriding.IsChecked;
+    if (behaviorOverriding.PreviousIsChecked !== undefined)
+      this._behaviorData.PreviousIsChecked = behaviorOverriding.PreviousIsChecked;
+    if (behaviorOverriding.WasChecked !== undefined)
+      this._behaviorData.WasChecked = behaviorOverriding.WasChecked;
 
     return true;
   }
@@ -707,13 +707,6 @@ gdjs.evtsExt__SpriteToggleSwitch__SwitchFSM.SwitchFSM.prototype.SetCheckedContex
 
 
 gdjs.evtsExt__SpriteToggleSwitch__SwitchFSM.SwitchFSM.prototype.SetCheckedContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
-
-{
-
-
-
-}
-
 
 {
 
